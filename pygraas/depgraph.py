@@ -12,6 +12,8 @@ from pydeps import cli
 
 
 class DependencyGraph:
+    """Build a NetworkX Dependency Graph."""
+
     def __init__(self, package_name, package_url):
         self.package_name = package_name
         self.dot_file = f"{self.package_name}_deps.dot"
@@ -30,18 +32,21 @@ class DependencyGraph:
         self._cleanup_dir()
         return self.graph
 
-    def _generate_dot_file(self, max_bacon):
+    def _generate_dot_file(self, max_bacon, skip_private=False):
         """Generates the DOT file using pydeps."""
-        result = pydeps(**cli.parse_args(
-            [
-                "-vv",
-                f"--max-bacon={max_bacon}",
-                "--cluster",
-                "-x _*",
-                f"--dot-output={self.dot_file}",
-                "--show-dot",
-                self.package_name,
-        ]))
+        _args = [
+            "-vv",
+            f"--max-bacon={max_bacon}",
+            "--cluster",
+            f"--dot-output={self.dot_file}",
+            "--show-dot",
+            self.package_name,
+        ]
+
+        if skip_private:
+            _args.insert(-2, "-x _*")
+
+        result = pydeps(**cli.parse_args(args))
         return True
 
     def _build_networkx_graph(self):
