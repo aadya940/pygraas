@@ -30,6 +30,9 @@ class DependencyGraph:
         if _is_file:
             self._build_networkx_graph()
         self._cleanup_dir()
+        nx.set_node_attributes(self.graph, False, "is_vulnerable")
+        nx.set_node_attributes(self.graph, None, "CVE")
+        nx.set_node_attributes(self.graph, "blue", "color")
         return self.graph
 
     def _generate_dot_file(self, max_bacon, skip_private=False):
