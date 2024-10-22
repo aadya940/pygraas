@@ -46,7 +46,7 @@ class DependencyGraph:
         if skip_private:
             _args.insert(-2, "-x _*")
 
-        result = pydeps(**cli.parse_args(args))
+        result = pydeps(**cli.parse_args(_args))
         return True
 
     def _build_networkx_graph(self):
