@@ -30,12 +30,13 @@ class DependencyGraph:
         if _is_file:
             self._build_networkx_graph()
         self._cleanup_dir()
-        nx.set_node_attributes(self.graph, False, "is_vulnerable")
-        nx.set_node_attributes(self.graph, None, "CVE")
+        nx.set_node_attributes(self.graph, [], "is_vulnerable")
+        nx.set_node_attributes(self.graph, [], "CVE")
+        nx.set_node_attributes(self.graph, [], "version")
         nx.set_node_attributes(self.graph, "blue", "color")
         return self.graph
 
-    def _generate_dot_file(self, max_bacon, skip_private=False):
+    def _generate_dot_file(self, max_bacon, skip_private=True):
         """Generates the DOT file using pydeps."""
         _args = [
             "-vv",
@@ -47,7 +48,7 @@ class DependencyGraph:
         ]
 
         if skip_private:
-            _args.insert(-2, "-x _*")
+            _args.insert(-2, "-x _* chainopy._*")
 
         result = pydeps(**cli.parse_args(_args))
         return True
