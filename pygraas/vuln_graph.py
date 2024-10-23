@@ -16,7 +16,7 @@ class VulnerabilityGraph:
 
         for node in _nodes:
             for vul_package in INSECURE_FULL.keys():
-                if node.lower() in vul_package.lower():  # Case-insensitive comparison
+                if vul_package.lower() in node.lower():  # Case-insensitive comparison
                     vulnerabilities = INSECURE_FULL[vul_package]
 
                     # Check if vulnerabilities is a single dict or a list of dicts
