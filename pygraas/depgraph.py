@@ -41,6 +41,7 @@ class DependencyGraph:
         _args = [
             "-vv",
             f"--max-bacon={max_bacon}",
+            "--external",
             "--cluster",
             f"--dot-output={self.dot_file}",
             "--show-dot",
