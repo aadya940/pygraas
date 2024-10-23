@@ -1,3 +1,7 @@
+### Notes
+PyGraas executes shell commands internally, hence `git` and `pydeps` need to 
+be configured correctly and be added to system path.
+
 ### Examples
 
 ```
