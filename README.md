@@ -5,6 +5,8 @@ Requires: `Git` & `PyDeps`.
 PyGraas executes shell commands internally, hence `git` and `pydeps` need to 
 be configured correctly and be added to system path.
 
+Data Source: https://github.com/pyupio/safety-db
+
 ### Examples
 
 ```
@@ -16,3 +18,5 @@ g.visualize_graph()
 nodes = g.get_nodes()
 print(nodes)
 ```
+
+
