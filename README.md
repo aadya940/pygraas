@@ -1,5 +1,10 @@
 ### PyGraas: A Python Library for Graph Analytics for Security in Python Packages
 
+### Installation
+- Download the wheel (.whl file) from the `https://github.com/aadya940/pygraas`.
+- pip install (.whl file).
+- Follow `Examples` section.
+
 ### Notes
 
 Requires: `Git` & `PyDeps`.
