@@ -50,6 +50,7 @@ class DependencyGraph:
             "-vv",  # Verbose
             f"--max-bacon={max_bacon}",
             "--cluster",  # Cluster dependencies for clarity
+            "--show-cycles",
             f"--dot-output={self.dot_file}",
             "--show-dot",  # Do not show dot file
             self.package_name,  # The package to analyze

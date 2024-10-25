@@ -13,8 +13,10 @@ import shutil
 from .depgraph import DependencyGraph
 from ._cloner import _clone_package
 
-with open("pygraas/insecure_full.json", "r") as _f:
-    INSECURE_FULL = json.loads(_f.read())
+import importlib.resources
+
+with importlib.resources.open_text("pygraas", "insecure_full.json") as _f:
+    INSECURE_FULL = json.load(_f)
 
 
 class VulnerabilityGraph:
@@ -115,3 +117,23 @@ class VulnerabilityGraph:
                 _advisory.append(vul_dict["advisory"])
 
         return _cve, _v, _advisory
+
+    def get_vulnerables(self):
+        vulnerables = []
+        for node in self.graph.graph.nodes(data=True):
+            if self.graph.graph.nodes[node]["is_vulnerable"] == True:
+                vulnerables.append(node)
+
+        return vulnerables
+
+    def get_degree(self, node, details=True):
+        if details:
+            in_degree = self.graph.graph.in_degree(node)
+            out_degree = self.graph.graph.out_degree(node)
+
+            return {
+                "in_degree": in_degree,
+                "out_degree": out_degree,
+            }
+
+        return self.graph.graph.degree(node)
