@@ -118,11 +118,14 @@ class VulnerabilityGraph:
 
         return _cve, _v, _advisory
 
-    def get_vulnerables(self):
+    def get_vulnerables(self, details=False):
         vulnerables = []
-        for node in self.graph.graph.nodes(data=True):
+        for node in self.graph.graph.nodes:
             if self.graph.graph.nodes[node]["is_vulnerable"] == True:
-                vulnerables.append(node)
+                if details:
+                    vulnerables.append({node: self.graph.graph.nodes(data=True)[node]})
+                else:
+                    vulnerables.append(node)
 
         return vulnerables
 
