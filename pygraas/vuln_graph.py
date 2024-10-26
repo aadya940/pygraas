@@ -83,7 +83,7 @@ class VulnerabilityGraph:
             assert node is not None
             return node, True
         except KeyError as e:
-            return _, False
+            return None, False
 
     def _mark_vulnerable(self, node, vulnerabilities, package):
         if package not in self.checked_packages:
