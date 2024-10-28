@@ -13,7 +13,7 @@ import pickle
 import random
 
 from .depgraph import DependencyGraph
-from ._cloner import _clone_package
+from .utils import _clone_package, _cleanup_dir
 
 import importlib.resources
 
@@ -74,8 +74,7 @@ class VulnerabilityGraph:
                     self._mark_vulnerable(node, vulnerabilities, _package)
 
         # Cleanup
-        if self.graph.package_name in os.listdir("."):
-            shutil.rmtree(self.graph.package_name)
+        _cleanup_dir(self.graph.package_name)
 
         return self.graph
 

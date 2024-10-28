@@ -6,7 +6,7 @@ import os
 import shutil
 import sys
 
-from ._cloner import _clone_package
+from ._utils import _clone_package
 
 from pydeps.pydeps import pydeps
 from pydeps import cli
@@ -105,7 +105,3 @@ class DependencyGraph:
             raise ValueError("Graph is not built yet. Call `build_graph` first.")
 
         return list(self.graph.edges())
-
-    def _cleanup_dir(self):
-        if self.package_name in os.listdir("."):
-            shutil.rmtree(self.package_name)
