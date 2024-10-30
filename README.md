@@ -1,7 +1,10 @@
 ### PyGraas: A Vulnerability Analysis and Restriction Layer for Python Packages.
 
+We ensure runtime safety by providing a Graph Analytics and
+Restriction layer on top of Python Packages.
+
 ### Installation
-- Download the wheel (.whl file) from the `https://github.com/aadya940/pygraas`.
+- Download the wheel from `https://github.com/aadya940/pygraas`.
 - pip install (.whl file).
 - Follow `Examples` section.
 
