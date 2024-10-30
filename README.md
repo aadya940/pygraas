@@ -1,4 +1,4 @@
-### PyGraas: A Python Library for Graph Analytics for Security in Python Packages
+### PyGraas: A Vulnerability Analysis and Restriction Layer for Python Packages.
 
 ### Installation
 - Download the wheel (.whl file) from the `https://github.com/aadya940/pygraas`.
