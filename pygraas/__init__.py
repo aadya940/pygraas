@@ -1,2 +1,2 @@
-from .depgraph import DependencyGraph
-from .vuln_graph import VulnerabilityGraph
+from ._depgraph import DependencyGraph
+from ._vuln_graph import VulnerabilityGraph

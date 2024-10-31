@@ -28,7 +28,9 @@ class DependencyGraph:
             raise ValueError("Failed to clone.")
 
     def build_graph(self, max_bacon=2):
-        _is_file = self._generate_dot_file(max_bacon=max_bacon)
+        _is_file = self._generate_dot_file(
+            max_bacon=max_bacon,
+        )
         self.max_bacon = max_bacon
         if _is_file:
             self._build_networkx_graph()
@@ -40,20 +42,18 @@ class DependencyGraph:
         nx.set_node_attributes(self.graph, "blue", "color")
         return self.graph
 
-    def _generate_dot_file(self, max_bacon, skip_private=True):
+    def _generate_dot_file(self, max_bacon):
         """Generates the DOT file using pydeps."""
-        exclude_args = []
-        if skip_private:
-            exclude_args = ["--exclude", "_*", f"{self.package_name}._*"]
 
         _args = [
             "-vv",  # Verbose
             f"--max-bacon={max_bacon}",
+            "--pylib",
             "--cluster",  # Cluster dependencies for clarity
             f"--dot-output={self.dot_file}",
             "--show-dot",  # Do not show dot file
             self.package_name,  # The package to analyze
-        ] + exclude_args  # Append exclusion arguments as separate list items
+        ]
 
         try:
             result = pydeps(**cli.parse_args(_args))

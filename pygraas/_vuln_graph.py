@@ -11,9 +11,11 @@ from copy import deepcopy
 import shutil
 import pickle
 import random
+from functools import cached_property
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from .depgraph import DependencyGraph
-from .utils import _clone_package, _cleanup_dir
+from ._depgraph import DependencyGraph
+from ._utils import _clone_package, _cleanup_dir
 
 import importlib.resources
 
@@ -170,3 +172,29 @@ class VulnerabilityGraph:
 
         except (IOError, pickle.UnpicklingError) as e:
             print(f"Failed to load graph: {e}")
+
+    def get_vulnerable_public_nodes(self, vul_package):
+        """List of Public Nodes that have a path to a vulnerable package.
+        Computed Parallely."""
+        vulnerables = self.get_vulnerables()
+
+        assert vul_package in vulnerables
+        paths = []
+
+        def check_node(node):
+            if not (("._" in node) or (node.startswith("_")) or (node in vulnerables)):
+                if nx.has_path(self.graph.graph, node, vul_package):
+                    return {f"{node} - {vul_package}": True}
+            return None
+
+        with ThreadPoolExecutor() as executor:
+            future_to_node = {
+                executor.submit(check_node, node): node for node in self.graph.graph
+            }
+
+            for future in as_completed(future_to_node):
+                result = future.result()
+                if result is not None:
+                    paths.append(result)
+
+        return paths

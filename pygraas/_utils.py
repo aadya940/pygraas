@@ -1,4 +1,8 @@
 import os
+import shutil
+
+# os.system is potentially unsafe.
+# Use some other library, maybe `subprocess`?
 
 
 def _clone_package(package_name, package_url):
