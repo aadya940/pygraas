@@ -3,7 +3,7 @@
 We ensure runtime safety by providing a Graph Analytics and
 Restriction layer on top of Python Packages.
 
-##### Features:
+### Features:
 🟢  Build DependencyGraph for Python Packages. <br>
 🟢 Detect Vulnerable Python Dependencies using VulnerabilityGraph, analyse
 these graphs. <br>
