@@ -4,17 +4,17 @@ We ensure runtime safety by providing a Graph Analytics and
 Restriction layer on top of Python Packages.
 
 ##### Features:
-🟢  Build DependencyGraph for Python Packages.
+🟢  Build DependencyGraph for Python Packages. <br>
 🟢 Detect Vulnerable Python Dependencies using VulnerabilityGraph, analyse
-these graphs.
-🟢 Block Vulnerable functions, even the ones deep in the call stack.
-🟢 A toolkit for security of python packages and graph analytics.
-🟢 Easy to use API.
+these graphs. <br>
+🟢 Block Vulnerable functions, even the ones deep in the call stack. <br>
+🟢 A toolkit for security of python packages and graph analytics. <br>
+🟢 Easy to use API. <br>
 
 ### Installation
-🔴 Download the wheel from `https://github.com/aadya940/pygraas`.
-🔴 pip install (.whl file).
-🔴 Follow `Examples` section.
+🔴 Download the wheel from `https://github.com/aadya940/pygraas`. <br>
+🔴 pip install (.whl file). <br>
+🔴 Follow `Examples` section. <br>
 
 ### Notes
 ```
