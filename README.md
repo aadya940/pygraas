@@ -7,7 +7,7 @@ Restriction layer on top of Python Packages.
 -  Build DependencyGraph for Python Packages.
 -  Detect Vulnerable Python Dependencies using VulnerabilityGraph, analyse
   these graphs.
-- Block Vulnerable functions,even the ones deep in the call stack.
+- Block Vulnerable functions, even the ones deep in the call stack.
 - A toolkit for security of python packages and graph analytics.
 - Easy to use API.
 
