@@ -9,4 +9,6 @@ unsafe_functions = [
     "subprocess.check_output",
     "builtins.eval",
     "builtins.exec",
+    "builtins.compile",
+    "builtins.exec",
 ]
