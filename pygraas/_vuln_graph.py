@@ -9,7 +9,6 @@ import subprocess
 import os
 from copy import deepcopy
 import shutil
-import pickle
 import random
 from functools import cached_property
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -143,35 +142,6 @@ class VulnerabilityGraph:
             }
 
         return self.graph.graph.degree(node)
-
-    def save_graph(self):
-        """Saves the graph to a pickle file with a unique name."""
-        __val = random.randint(0, random.randint(0, 1000))
-        filename = f"vulgraph{__val}.pickle"
-
-        while filename in os.listdir("."):
-            __val += random.randint(1, 1000)
-            filename = f"vulgraph{__val}.pickle"
-
-        try:
-            with open(filename, "wb") as f:
-                pickle.dump(self.graph, f)
-
-        except IOError as e:
-            print(f"Failed to save graph: {e}")
-
-    def load_graph(self, filename):
-        """Loads the graph from a pickle file."""
-        if not os.path.isfile(filename):
-            print(f"File not found: {filename}")
-            return
-
-        try:
-            with open(filename, "rb") as f:
-                self.graph = pickle.load(f)
-
-        except (IOError, pickle.UnpicklingError) as e:
-            print(f"Failed to load graph: {e}")
 
     def get_vulnerable_public_nodes(self, vul_package):
         """List of Public Nodes that have a path to a vulnerable package.

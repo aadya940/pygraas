@@ -2,3 +2,4 @@ pydot
 matplotlib
 pydeps
 networkx
+networkx-gdf
