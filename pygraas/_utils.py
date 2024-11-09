@@ -1,8 +1,29 @@
-import os
+import importlib.util
 import shutil
+import os
+from pathlib import Path
+import warnings
 
 # os.system is potentially unsafe.
 # Use some other library, maybe `subprocess`?
+
+
+def get_package(package_name, package_url=None, clone=True):
+    if clone:
+        if package_url is None:
+            raise ValueError("`package_url` kwarg not recieved in `clone` mode.")
+        else:
+            _clone_package(package_name, package_url)
+
+    elif not clone:
+        warnings.warn(
+            """
+        Not using `clone` mode builds the package source code by unzipping the wheels,
+        hence the `C/C++` Extension files present in the source code will be lost due
+        to the compiled nature of the wheel.
+        """
+        )
+        _get_package_no_clone(package_name)
 
 
 def _clone_package(package_name, package_url):
@@ -12,6 +33,45 @@ def _clone_package(package_name, package_url):
         return True
     except Exception as e:
         print(str(e))
+        return False
+
+
+def _get_package_no_clone(package_name):
+    try:
+        # Step 1: Locate the installed package
+        spec = importlib.util.find_spec(package_name)
+        if not spec or not spec.origin:
+            print(f"Package {package_name} not found.")
+            return False
+
+        package_path = Path(spec.origin).parent
+        print(f"Located package: {package_path}")
+
+        # Step 2: Copy the source code to the current directory
+        destination_dir = Path.cwd() / package_name
+        if destination_dir.exists():
+            shutil.rmtree(destination_dir)  # Remove if already exists
+
+        try:
+            shutil.copytree(package_path, destination_dir)
+            print(f"Copied source files to: {destination_dir}")
+        except Exception as e:
+            print(f"Failed to copy source files: {e}")
+            return False
+
+        # Step 3: Remove unnecessary metadata folders
+        for item in destination_dir.glob("*.dist-info"):
+            shutil.rmtree(item, ignore_errors=True)
+        for item in destination_dir.glob("*.egg-info"):
+            shutil.rmtree(item, ignore_errors=True)
+        for item in destination_dir.glob("__pycache__"):
+            shutil.rmtree(item, ignore_errors=True)
+
+        print(f"Cleaned up metadata for package: {package_name}")
+        return True
+
+    except Exception as e:
+        print(f"Exception occurred: {e}")
         return False
 
 

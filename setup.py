@@ -15,6 +15,7 @@ setup(
         "matplotlib",
         "pydeps",
         "networkx",
+        "networkx-gdf",
     ],
     include_package_data=True,
     classifiers=[

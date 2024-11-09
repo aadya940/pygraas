@@ -6,7 +6,7 @@ import os
 import shutil
 import sys
 
-from ._utils import _clone_package
+from ._utils import get_package
 
 from pydeps.pydeps import pydeps
 from pydeps import cli
@@ -15,14 +15,16 @@ from pydeps import cli
 class DependencyGraph:
     """Build a NetworkX Dependency Graph."""
 
-    def __init__(self, package_name: str, package_url: str):
+    def __init__(self, package_name: str, package_url: str, allow_clone=True):
         self.package_name = package_name.lower()
         self.dot_file = f"{self.package_name}_deps.dot"
         self.graph = None
         self.package_url = package_url
         self.max_bacon = None  # Max. Tree Depth
 
-        _clone = _clone_package(self.package_name, self.package_url)
+        _get_pkg = get_package(
+            package_name=package_name, package_url=package_url, allow_clone=allow_clone
+        )
 
         if self.package_name not in os.listdir("."):
             raise ValueError("Failed to clone.")
@@ -51,12 +53,13 @@ class DependencyGraph:
             "--pylib",
             "--cluster",  # Cluster dependencies for clarity
             f"--dot-output={self.dot_file}",
-            "--show-dot",  # Do not show dot file
+            "--show-dot",
             self.package_name,  # The package to analyze
         ]
 
         try:
             result = pydeps(**cli.parse_args(_args))
+
         except SystemExit as e:
             if e.code != 0:
                 raise RuntimeError(f"pydeps failed with exit code {e.code}")
@@ -73,24 +76,6 @@ class DependencyGraph:
         print(
             f"Graph built with {len(self.graph.nodes)} nodes and {len(self.graph.edges)} edges."
         )
-
-    def visualize_graph(self):
-        """Visualizes the networkx graph using matplotlib."""
-        if self.graph is None:
-            raise ValueError("Graph is not built yet. Call `build_graph` first.")
-
-        pos = nx.spring_layout(self.graph)
-        nx.draw(
-            self.graph,
-            pos,
-            with_labels=True,
-            node_color="lightblue",
-            node_size=3000,
-            font_size=10,
-            font_weight="bold",
-        )
-
-        plt.show()
 
     def get_nodes(self):
         """Returns the list of nodes (packages) in the graph."""
