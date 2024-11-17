@@ -23,7 +23,7 @@ class DependencyGraph:
         self.max_bacon = None  # Max. Tree Depth
 
         _get_pkg = get_package(
-            package_name=package_name, package_url=package_url, allow_clone=allow_clone
+            package_name=package_name, package_url=package_url, clone=allow_clone
         )
 
         if self.package_name not in os.listdir("."):

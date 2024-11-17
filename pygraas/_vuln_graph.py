@@ -23,9 +23,10 @@ with importlib.resources.open_text("pygraas", "insecure_full.json") as _f:
 
 
 class VulnerabilityGraph:
-    def __init__(self, graph: DependencyGraph):
+    def __init__(self, graph: DependencyGraph, allow_clone=False):
         self.graph = deepcopy(graph)
         self.checked_packages = set()
+        self.allow_clone = allow_clone
 
     def build_vulnerability_graph(self):
         """Builds the vulnerability graph by checking each package in \
@@ -41,7 +42,9 @@ class VulnerabilityGraph:
         ]
 
         if not (self.graph.package_name in os.listdir(".")):
-            _clone_package(self.graph.package_name, self.graph.package_url)
+            _clone_package(
+                self.graph.package_name, self.graph.package_url, clone=self.allow_clone
+            )
 
         result = subprocess.run(
             _args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
