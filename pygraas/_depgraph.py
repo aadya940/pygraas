@@ -37,10 +37,10 @@ class DependencyGraph:
         if _is_file:
             self._build_networkx_graph()
 
-        nx.set_node_attributes(self.graph, False, "is_vulnerable")
-        nx.set_node_attributes(self.graph, None, "CVE")
-        nx.set_node_attributes(self.graph, None, "version")
-        nx.set_node_attributes(self.graph, None, "advisory")
+        nx.set_node_attributes(self.graph, "False", "is_vulnerable")
+        nx.set_node_attributes(self.graph, "None", "CVE")
+        nx.set_node_attributes(self.graph, "None", "version")
+        nx.set_node_attributes(self.graph, "None", "advisory")
         nx.set_node_attributes(self.graph, "blue", "color")
         return self.graph
 

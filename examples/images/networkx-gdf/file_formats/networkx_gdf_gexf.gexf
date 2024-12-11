@@ -1,0 +1,3833 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2024-12-11">
+    <creator>NetworkX 3.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="G">
+    <attributes mode="static" class="edge">
+      <attribute id="8" title="fillcolor" type="string" />
+      <attribute id="9" title="networkx_key" type="long" />
+      <attribute id="10" title="minlen" type="string" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="fillcolor" type="string" />
+      <attribute id="1" title="fontcolor" type="string" />
+      <attribute id="2" title="shape" type="string" />
+      <attribute id="3" title="is_vulnerable" type="string" />
+      <attribute id="4" title="CVE" type="string" />
+      <attribute id="5" title="version" type="string" />
+      <attribute id="6" title="advisory" type="string" />
+      <attribute id="7" title="color" type="string" />
+    </attributes>
+    <nodes>
+      <node id="__main__" label="__main__">
+        <attvalues>
+          <attvalue for="0" value="&quot;#a44646&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="_abc" label="_abc">
+        <attvalues>
+          <attvalue for="0" value="&quot;#b65a53&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="_aix_support" label="_aix_support">
+        <attvalues>
+          <attvalue for="0" value="&quot;#ac5549&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="_collections" label="_collections">
+        <attvalues>
+          <attvalue for="0" value="&quot;#c25e47&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="_collections_abc" label="_collections_abc">
+        <attvalues>
+          <attvalue for="0" value="&quot;#f94206&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="_csv" label="_csv">
+        <attvalues>
+          <attvalue for="0" value="&quot;#b67253&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="_functools" label="_functools">
+        <attvalues>
+          <attvalue for="0" value="&quot;#b67853&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="_imp" label="_imp">
+        <attvalues>
+          <attvalue for="0" value="&quot;#f97510&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="_io" label="_io">
+        <attvalues>
+          <attvalue for="0" value="&quot;#ce843b&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="_locale" label="_locale">
+        <attvalues>
+          <attvalue for="0" value="&quot;#c28c47&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="_operator" label="_operator">
+        <attvalues>
+          <attvalue for="0" value="&quot;#b69053&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="_osx_support" label="_osx_support">
+        <attvalues>
+          <attvalue for="0" value="&quot;#9d8043&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="_py_abc" label="_py_abc">
+        <attvalues>
+          <attvalue for="0" value="&quot;#b69c53&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="_stat" label="_stat">
+        <attvalues>
+          <attvalue for="0" value="&quot;#b6a353&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="_thread" label="_thread">
+        <attvalues>
+          <attvalue for="0" value="&quot;#dbc42f&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="_warnings" label="_warnings">
+        <attvalues>
+          <attvalue for="0" value="&quot;#cec43b&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="_weakref" label="_weakref">
+        <attvalues>
+          <attvalue for="0" value="&quot;#c2c147&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="abc" label="abc">
+        <attvalues>
+          <attvalue for="0" value="&quot;#e3ef06&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="argparse" label="argparse">
+        <attvalues>
+          <attvalue for="0" value="&quot;#adc20a&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="ast" label="ast">
+        <attvalues>
+          <attvalue for="0" value="&quot;#94ae1e&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="binascii" label="binascii">
+        <attvalues>
+          <attvalue for="0" value="&quot;#a5c247&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="builtins" label="builtins">
+        <attvalues>
+          <attvalue for="0" value="&quot;#b4f910&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="bz2" label="bz2">
+        <attvalues>
+          <attvalue for="0" value="&quot;#8cc823&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="codecs" label="codecs">
+        <attvalues>
+          <attvalue for="0" value="&quot;#8dd926&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="collections" label="collections">
+        <attvalues>
+          <attvalue for="0" value="&quot;#5eb304&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="contextlib" label="contextlib">
+        <attvalues>
+          <attvalue for="0" value="&quot;#62d105&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="copy" label="copy">
+        <attvalues>
+          <attvalue for="0" value="&quot;#5de505&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="copyreg" label="copyreg">
+        <attvalues>
+          <attvalue for="0" value="&quot;#65b83d&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="csv" label="csv">
+        <attvalues>
+          <attvalue for="0" value="&quot;#54bc2f&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="ctypes" label="ctypes">
+        <attvalues>
+          <attvalue for="0" value="&quot;#4fa838&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="datetime" label="datetime">
+        <attvalues>
+          <attvalue for="0" value="&quot;#29f906&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="dis" label="dis">
+        <attvalues>
+          <attvalue for="0" value="&quot;#4b9d43&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="email" label="email">
+        <attvalues>
+          <attvalue for="0" value="&quot;#0aef06&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="enum" label="enum">
+        <attvalues>
+          <attvalue for="0" value="&quot;#06ef0f&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="errno" label="errno">
+        <attvalues>
+          <attvalue for="0" value="&quot;#16f32d&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="fnmatch" label="fnmatch">
+        <attvalues>
+          <attvalue for="0" value="&quot;#2db443&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="functools" label="functools">
+        <attvalues>
+          <attvalue for="0" value="&quot;#04b32c&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="genericpath" label="genericpath">
+        <attvalues>
+          <attvalue for="0" value="&quot;#3db860&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="grp" label="grp">
+        <attvalues>
+          <attvalue for="0" value="&quot;#3bce6f&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="heapq" label="heapq">
+        <attvalues>
+          <attvalue for="0" value="&quot;#10f970&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="imp" label="imp">
+        <attvalues>
+          <attvalue for="0" value="&quot;#317250&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="importlib" label="importlib">
+        <attvalues>
+          <attvalue for="0" value="&quot;#05d172&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="inspect" label="inspect">
+        <attvalues>
+          <attvalue for="0" value="&quot;#03955b&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="io" label="io">
+        <attvalues>
+          <attvalue for="0" value="&quot;#05e599&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="json" label="json">
+        <attvalues>
+          <attvalue for="0" value="&quot;#40c09c&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="keyword" label="keyword">
+        <attvalues>
+          <attvalue for="0" value="&quot;#47c2a7&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="linecache" label="linecache">
+        <attvalues>
+          <attvalue for="0" value="&quot;#17d3b6&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="locale" label="locale">
+        <attvalues>
+          <attvalue for="0" value="&quot;#269b90&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="lzma" label="lzma">
+        <attvalues>
+          <attvalue for="0" value="&quot;#2fbcb8&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="marshal" label="marshal">
+        <attvalues>
+          <attvalue for="0" value="&quot;#3bcace&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="networkx" label="networkx">
+        <attvalues>
+          <attvalue for="0" value="&quot;#038895&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="networkx_gdf" label="networkx_gdf">
+        <attvalues>
+          <attvalue for="0" value="&quot;#499cac&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="networkx_gdf___version__" label="&quot;networkx_gdf\.\n__version__&quot;">
+        <attvalues>
+          <attvalue for="0" value="&quot;#3a9eb0&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="networkx_gdf_networkx_gdf" label="&quot;networkx_gdf\.\nnetworkx_gdf&quot;">
+        <attvalues>
+          <attvalue for="0" value="&quot;#3897a8&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="ntpath" label="ntpath">
+        <attvalues>
+          <attvalue for="0" value="&quot;#2d96b4&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="numpy" label="numpy">
+        <attvalues>
+          <attvalue for="0" value="&quot;#0598d1&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="operator" label="operator">
+        <attvalues>
+          <attvalue for="0" value="&quot;#0599e5&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="os" label="os">
+        <attvalues>
+          <attvalue for="0" value="&quot;#04619f&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="pandas" label="pandas">
+        <attvalues>
+          <attvalue for="0" value="&quot;#035295&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="True" />
+          <attvalue for="4" value="['PVE-2023-99975']" />
+          <attvalue for="5" value="['&lt;0.16.0rc1']" />
+          <attvalue for="6" value="['Prior to version v0.16.0rc1, Pandas had a SQL injection vulnerability that could let attackers carry out any SQL commands they wished.']" />
+          <attvalue for="7" value="red" />
+        </attvalues>
+      </node>
+      <node id="pathlib" label="pathlib">
+        <attvalues>
+          <attvalue for="0" value="&quot;#074991&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="pkg_resources" label="pkg_resources">
+        <attvalues>
+          <attvalue for="0" value="&quot;#264673&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="pkgutil" label="pkgutil">
+        <attvalues>
+          <attvalue for="0" value="&quot;#2e436b&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="platform" label="platform">
+        <attvalues>
+          <attvalue for="0" value="&quot;#1b409c&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="plistlib" label="plistlib">
+        <attvalues>
+          <attvalue for="0" value="&quot;#263773&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="posix" label="posix">
+        <attvalues>
+          <attvalue for="0" value="&quot;#3b53ce&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="posixpath" label="posixpath">
+        <attvalues>
+          <attvalue for="0" value="&quot;#0a1ecc&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="pprint" label="pprint">
+        <attvalues>
+          <attvalue for="0" value="&quot;#43479d&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="pwd" label="pwd">
+        <attvalues>
+          <attvalue for="0" value="&quot;#322fdb&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="py_compile" label="py_compile">
+        <attvalues>
+          <attvalue for="0" value="&quot;#3d3781&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="random" label="random">
+        <attvalues>
+          <attvalue for="0" value="&quot;#4838a8&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="re" label="re">
+        <attvalues>
+          <attvalue for="0" value="&quot;#2a04bd&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="reprlib" label="reprlib">
+        <attvalues>
+          <attvalue for="0" value="&quot;#5e3db8&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="scipy" label="scipy">
+        <attvalues>
+          <attvalue for="0" value="&quot;#4c05db&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="shutil" label="shutil">
+        <attvalues>
+          <attvalue for="0" value="&quot;#3f0f8a&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="socket" label="socket">
+        <attvalues>
+          <attvalue for="0" value="&quot;#6c439d&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="sre_compile" label="sre_compile">
+        <attvalues>
+          <attvalue for="0" value="&quot;#7c49ac&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="sre_constants" label="sre_constants">
+        <attvalues>
+          <attvalue for="0" value="&quot;#903bce&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="sre_parse" label="sre_parse">
+        <attvalues>
+          <attvalue for="0" value="&quot;#8b3db8&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="stat" label="stat">
+        <attvalues>
+          <attvalue for="0" value="&quot;#b006f9&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="string" label="string">
+        <attvalues>
+          <attvalue for="0" value="&quot;#a824d0&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="struct" label="struct">
+        <attvalues>
+          <attvalue for="0" value="&quot;#cc16f3&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="subprocess" label="subprocess">
+        <attvalues>
+          <attvalue for="0" value="&quot;#772083&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="sysconfig" label="sysconfig">
+        <attvalues>
+          <attvalue for="0" value="&quot;#852e8a&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="tempfile" label="tempfile">
+        <attvalues>
+          <attvalue for="0" value="&quot;#7a1e79&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="textwrap" label="textwrap">
+        <attvalues>
+          <attvalue for="0" value="&quot;#f906e8&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="threading" label="threading">
+        <attvalues>
+          <attvalue for="0" value="&quot;#913084&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="token" label="token">
+        <attvalues>
+          <attvalue for="0" value="&quot;#c247aa&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="tokenize" label="tokenize">
+        <attvalues>
+          <attvalue for="0" value="&quot;#af0984&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="traceback" label="traceback">
+        <attvalues>
+          <attvalue for="0" value="&quot;#c43195&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="tracemalloc" label="tracemalloc">
+        <attvalues>
+          <attvalue for="0" value="&quot;#964075&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="types" label="types">
+        <attvalues>
+          <attvalue for="0" value="&quot;#ef0688&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="typing" label="typing">
+        <attvalues>
+          <attvalue for="0" value="&quot;#b3045b&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="urllib" label="urllib">
+        <attvalues>
+          <attvalue for="0" value="&quot;#b6537e&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="warnings" label="warnings">
+        <attvalues>
+          <attvalue for="0" value="&quot;#c7054d&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="weakref" label="weakref">
+        <attvalues>
+          <attvalue for="0" value="&quot;#d31751&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="xml" label="xml">
+        <attvalues>
+          <attvalue for="0" value="&quot;#db2f59&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="zipfile" label="zipfile">
+        <attvalues>
+          <attvalue for="0" value="&quot;#82172a&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="zipimport" label="zipimport">
+        <attvalues>
+          <attvalue for="0" value="&quot;#8a2e39&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+      <node id="zlib" label="zlib">
+        <attvalues>
+          <attvalue for="0" value="&quot;#ce3b44&quot;" />
+          <attvalue for="1" value="&quot;#ffffff&quot;" />
+          <attvalue for="2" value="&quot;folder&quot;" />
+          <attvalue for="3" value="False" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="blue" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="__main__" target="pkg_resources" id="0">
+        <attvalues>
+          <attvalue for="8" value="&quot;#a44646&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_abc" target="abc" id="1">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b65a53&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_aix_support" target="sysconfig" id="2">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ac5549&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_collections" target="collections" id="3">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c25e47&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_collections" target="threading" id="4">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c25e47&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_collections_abc" target="collections" id="5">
+        <attvalues>
+          <attvalue for="8" value="&quot;#f94206&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_collections_abc" target="contextlib" id="6">
+        <attvalues>
+          <attvalue for="8" value="&quot;#f94206&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_collections_abc" target="locale" id="7">
+        <attvalues>
+          <attvalue for="8" value="&quot;#f94206&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_collections_abc" target="pathlib" id="8">
+        <attvalues>
+          <attvalue for="8" value="&quot;#f94206&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_collections_abc" target="random" id="9">
+        <attvalues>
+          <attvalue for="8" value="&quot;#f94206&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_collections_abc" target="weakref" id="10">
+        <attvalues>
+          <attvalue for="8" value="&quot;#f94206&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_csv" target="csv" id="11">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b67253&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_functools" target="functools" id="12">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b67853&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_imp" target="imp" id="13">
+        <attvalues>
+          <attvalue for="8" value="&quot;#f97510&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_imp" target="importlib" id="14">
+        <attvalues>
+          <attvalue for="8" value="&quot;#f97510&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_imp" target="pkg_resources" id="15">
+        <attvalues>
+          <attvalue for="8" value="&quot;#f97510&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_imp" target="sysconfig" id="16">
+        <attvalues>
+          <attvalue for="8" value="&quot;#f97510&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_imp" target="zipimport" id="17">
+        <attvalues>
+          <attvalue for="8" value="&quot;#f97510&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_io" target="importlib" id="18">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ce843b&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_io" target="io" id="19">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ce843b&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_io" target="zipimport" id="20">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ce843b&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_locale" target="locale" id="21">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c28c47&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_operator" target="operator" id="22">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b69053&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_osx_support" target="sysconfig" id="23">
+        <attvalues>
+          <attvalue for="8" value="&quot;#9d8043&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_py_abc" target="abc" id="24">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b69c53&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_stat" target="stat" id="25">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b6a353&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_thread" target="functools" id="26">
+        <attvalues>
+          <attvalue for="8" value="&quot;#dbc42f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_thread" target="reprlib" id="27">
+        <attvalues>
+          <attvalue for="8" value="&quot;#dbc42f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_thread" target="tempfile" id="28">
+        <attvalues>
+          <attvalue for="8" value="&quot;#dbc42f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_thread" target="threading" id="29">
+        <attvalues>
+          <attvalue for="8" value="&quot;#dbc42f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_warnings" target="importlib" id="30">
+        <attvalues>
+          <attvalue for="8" value="&quot;#cec43b&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_warnings" target="warnings" id="31">
+        <attvalues>
+          <attvalue for="8" value="&quot;#cec43b&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_warnings" target="zipimport" id="32">
+        <attvalues>
+          <attvalue for="8" value="&quot;#cec43b&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_weakref" target="collections" id="33">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c2c147&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="_weakref" target="weakref" id="34">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c2c147&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="abc" target="_collections_abc" id="35">
+        <attvalues>
+          <attvalue for="8" value="&quot;#e3ef06&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="abc" target="contextlib" id="36">
+        <attvalues>
+          <attvalue for="8" value="&quot;#e3ef06&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="abc" target="email" id="37">
+        <attvalues>
+          <attvalue for="8" value="&quot;#e3ef06&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="abc" target="functools" id="38">
+        <attvalues>
+          <attvalue for="8" value="&quot;#e3ef06&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="abc" target="importlib" id="39">
+        <attvalues>
+          <attvalue for="8" value="&quot;#e3ef06&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="abc" target="inspect" id="40">
+        <attvalues>
+          <attvalue for="8" value="&quot;#e3ef06&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="abc" target="io" id="41">
+        <attvalues>
+          <attvalue for="8" value="&quot;#e3ef06&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="abc" target="pandas" id="42">
+        <attvalues>
+          <attvalue for="8" value="&quot;#e3ef06&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="abc" target="typing" id="43">
+        <attvalues>
+          <attvalue for="8" value="&quot;#e3ef06&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="argparse" target="ast" id="44">
+        <attvalues>
+          <attvalue for="8" value="&quot;#adc20a&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="argparse" target="dis" id="45">
+        <attvalues>
+          <attvalue for="8" value="&quot;#adc20a&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="argparse" target="inspect" id="46">
+        <attvalues>
+          <attvalue for="8" value="&quot;#adc20a&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="argparse" target="py_compile" id="47">
+        <attvalues>
+          <attvalue for="8" value="&quot;#adc20a&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="argparse" target="tokenize" id="48">
+        <attvalues>
+          <attvalue for="8" value="&quot;#adc20a&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="argparse" target="zipfile" id="49">
+        <attvalues>
+          <attvalue for="8" value="&quot;#adc20a&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="ast" target="inspect" id="50">
+        <attvalues>
+          <attvalue for="8" value="&quot;#94ae1e&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="ast" target="networkx" id="51">
+        <attvalues>
+          <attvalue for="8" value="&quot;#94ae1e&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="binascii" target="plistlib" id="52">
+        <attvalues>
+          <attvalue for="8" value="&quot;#a5c247&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="binascii" target="zipfile" id="53">
+        <attvalues>
+          <attvalue for="8" value="&quot;#a5c247&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="builtins" target="bz2" id="54">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b4f910&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="builtins" target="codecs" id="55">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b4f910&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="builtins" target="inspect" id="56">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b4f910&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="builtins" target="locale" id="57">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b4f910&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="builtins" target="lzma" id="58">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b4f910&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="builtins" target="numpy" id="59">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b4f910&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="builtins" target="operator" id="60">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b4f910&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="builtins" target="reprlib" id="61">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b4f910&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="builtins" target="subprocess" id="62">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b4f910&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="builtins" target="tokenize" id="63">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b4f910&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="builtins" target="warnings" id="64">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b4f910&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="bz2" target="networkx" id="65">
+        <attvalues>
+          <attvalue for="8" value="&quot;#8cc823&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="bz2" target="pandas" id="66">
+        <attvalues>
+          <attvalue for="8" value="&quot;#8cc823&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="bz2" target="shutil" id="67">
+        <attvalues>
+          <attvalue for="8" value="&quot;#8cc823&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="bz2" target="zipfile" id="68">
+        <attvalues>
+          <attvalue for="8" value="&quot;#8cc823&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="codecs" target="json" id="69">
+        <attvalues>
+          <attvalue for="8" value="&quot;#8dd926&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="codecs" target="pandas" id="70">
+        <attvalues>
+          <attvalue for="8" value="&quot;#8dd926&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="codecs" target="plistlib" id="71">
+        <attvalues>
+          <attvalue for="8" value="&quot;#8dd926&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="codecs" target="tokenize" id="72">
+        <attvalues>
+          <attvalue for="8" value="&quot;#8dd926&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="ast" id="73">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="contextlib" id="74">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="dis" id="75">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="email" id="76">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="functools" id="77">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="importlib" id="78">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="inspect" id="79">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="networkx" id="80">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="pandas" id="81">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="pkg_resources" id="82">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="pkgutil" id="83">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="platform" id="84">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="pprint" id="85">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="shutil" id="86">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="threading" id="87">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="tokenize" id="88">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="traceback" id="89">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="tracemalloc" id="90">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="typing" id="91">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="collections" target="urllib" id="92">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5eb304&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="contextlib" target="_osx_support" id="93">
+        <attvalues>
+          <attvalue for="8" value="&quot;#62d105&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="contextlib" target="ast" id="94">
+        <attvalues>
+          <attvalue for="8" value="&quot;#62d105&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="contextlib" target="importlib" id="95">
+        <attvalues>
+          <attvalue for="8" value="&quot;#62d105&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="contextlib" target="networkx" id="96">
+        <attvalues>
+          <attvalue for="8" value="&quot;#62d105&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="contextlib" target="pandas" id="97">
+        <attvalues>
+          <attvalue for="8" value="&quot;#62d105&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="contextlib" target="subprocess" id="98">
+        <attvalues>
+          <attvalue for="8" value="&quot;#62d105&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="contextlib" target="typing" id="99">
+        <attvalues>
+          <attvalue for="8" value="&quot;#62d105&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="contextlib" target="zipfile" id="100">
+        <attvalues>
+          <attvalue for="8" value="&quot;#62d105&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="copy" target="argparse" id="101">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5de505&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="copy" target="collections" id="102">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5de505&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="copy" target="networkx" id="103">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5de505&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="copy" target="pandas" id="104">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5de505&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="copy" target="weakref" id="105">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5de505&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="copyreg" target="copy" id="106">
+        <attvalues>
+          <attvalue for="8" value="&quot;#65b83d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="csv" target="importlib" id="107">
+        <attvalues>
+          <attvalue for="8" value="&quot;#54bc2f&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="csv" target="pandas" id="108">
+        <attvalues>
+          <attvalue for="8" value="&quot;#54bc2f&quot;" />
+          <attvalue for="10" value="&quot;4&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="ctypes" target="pandas" id="109">
+        <attvalues>
+          <attvalue for="8" value="&quot;#4fa838&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="datetime" target="pandas" id="110">
+        <attvalues>
+          <attvalue for="8" value="&quot;#29f906&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="datetime" target="plistlib" id="111">
+        <attvalues>
+          <attvalue for="8" value="&quot;#29f906&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="dis" target="inspect" id="112">
+        <attvalues>
+          <attvalue for="8" value="&quot;#4b9d43&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="email" target="importlib" id="113">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0aef06&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="email" target="pkg_resources" id="114">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0aef06&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="enum" target="ast" id="115">
+        <attvalues>
+          <attvalue for="8" value="&quot;#06ef0f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="enum" target="inspect" id="116">
+        <attvalues>
+          <attvalue for="8" value="&quot;#06ef0f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="enum" target="networkx" id="117">
+        <attvalues>
+          <attvalue for="8" value="&quot;#06ef0f&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="enum" target="pandas" id="118">
+        <attvalues>
+          <attvalue for="8" value="&quot;#06ef0f&quot;" />
+          <attvalue for="10" value="&quot;4&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="enum" target="plistlib" id="119">
+        <attvalues>
+          <attvalue for="8" value="&quot;#06ef0f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="enum" target="py_compile" id="120">
+        <attvalues>
+          <attvalue for="8" value="&quot;#06ef0f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="enum" target="socket" id="121">
+        <attvalues>
+          <attvalue for="8" value="&quot;#06ef0f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="errno" target="pathlib" id="122">
+        <attvalues>
+          <attvalue for="8" value="&quot;#16f32d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="errno" target="pkg_resources" id="123">
+        <attvalues>
+          <attvalue for="8" value="&quot;#16f32d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="errno" target="shutil" id="124">
+        <attvalues>
+          <attvalue for="8" value="&quot;#16f32d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="errno" target="socket" id="125">
+        <attvalues>
+          <attvalue for="8" value="&quot;#16f32d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="errno" target="subprocess" id="126">
+        <attvalues>
+          <attvalue for="8" value="&quot;#16f32d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="errno" target="tempfile" id="127">
+        <attvalues>
+          <attvalue for="8" value="&quot;#16f32d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="fnmatch" target="pathlib" id="128">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2db443&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="fnmatch" target="shutil" id="129">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2db443&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="fnmatch" target="tracemalloc" id="130">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2db443&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="contextlib" id="131">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="copyreg" id="132">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="fnmatch" id="133">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="importlib" id="134">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="inspect" id="135">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="linecache" id="136">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="locale" id="137">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="networkx" id="138">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="operator" id="139">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="pandas" id="140">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="pathlib" id="141">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="pkg_resources" id="142">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="pkgutil" id="143">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="platform" id="144">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="tempfile" id="145">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="threading" id="146">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="tokenize" id="147">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="tracemalloc" id="148">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="functools" target="typing" id="149">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04b32c&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="genericpath" target="ntpath" id="150">
+        <attvalues>
+          <attvalue for="8" value="&quot;#3db860&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="genericpath" target="posixpath" id="151">
+        <attvalues>
+          <attvalue for="8" value="&quot;#3db860&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="grp" target="pathlib" id="152">
+        <attvalues>
+          <attvalue for="8" value="&quot;#3bce6f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="grp" target="shutil" id="153">
+        <attvalues>
+          <attvalue for="8" value="&quot;#3bce6f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="grp" target="subprocess" id="154">
+        <attvalues>
+          <attvalue for="8" value="&quot;#3bce6f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="heapq" target="collections" id="155">
+        <attvalues>
+          <attvalue for="8" value="&quot;#10f970&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="heapq" target="networkx" id="156">
+        <attvalues>
+          <attvalue for="8" value="&quot;#10f970&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="imp" target="pkg_resources" id="157">
+        <attvalues>
+          <attvalue for="8" value="&quot;#317250&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="importlib" target="imp" id="158">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05d172&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="importlib" target="inspect" id="159">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05d172&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="importlib" target="networkx" id="160">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05d172&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="importlib" target="networkx_gdf___version__" id="161">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05d172&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="importlib" target="pandas" id="162">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05d172&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="importlib" target="pkg_resources" id="163">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05d172&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="importlib" target="pkgutil" id="164">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05d172&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="importlib" target="py_compile" id="165">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05d172&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="importlib" target="scipy" id="166">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05d172&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="importlib" target="zipfile" id="167">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05d172&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="importlib" target="zipimport" id="168">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05d172&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="inspect" target="ast" id="169">
+        <attvalues>
+          <attvalue for="8" value="&quot;#03955b&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="inspect" target="networkx" id="170">
+        <attvalues>
+          <attvalue for="8" value="&quot;#03955b&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="inspect" target="pandas" id="171">
+        <attvalues>
+          <attvalue for="8" value="&quot;#03955b&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="inspect" target="pkg_resources" id="172">
+        <attvalues>
+          <attvalue for="8" value="&quot;#03955b&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="inspect" target="pkgutil" id="173">
+        <attvalues>
+          <attvalue for="8" value="&quot;#03955b&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="io" target="bz2" id="174">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05e599&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="io" target="csv" id="175">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05e599&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="io" target="dis" id="176">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05e599&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="io" target="email" id="177">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05e599&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="io" target="lzma" id="178">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05e599&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="io" target="networkx" id="179">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05e599&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="io" target="networkx_gdf_networkx_gdf" id="180">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05e599&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="io" target="pandas" id="181">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05e599&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="io" target="pathlib" id="182">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05e599&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="io" target="pkg_resources" id="183">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05e599&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="io" target="plistlib" id="184">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05e599&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="io" target="pprint" id="185">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05e599&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="io" target="socket" id="186">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05e599&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="io" target="subprocess" id="187">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05e599&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="io" target="tempfile" id="188">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05e599&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="io" target="tokenize" id="189">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05e599&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="io" target="zipfile" id="190">
+        <attvalues>
+          <attvalue for="8" value="&quot;#05e599&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="json" target="pandas" id="191">
+        <attvalues>
+          <attvalue for="8" value="&quot;#40c09c&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="keyword" target="collections" id="192">
+        <attvalues>
+          <attvalue for="8" value="&quot;#47c2a7&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="keyword" target="pandas" id="193">
+        <attvalues>
+          <attvalue for="8" value="&quot;#47c2a7&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="linecache" target="inspect" id="194">
+        <attvalues>
+          <attvalue for="8" value="&quot;#17d3b6&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="linecache" target="pkg_resources" id="195">
+        <attvalues>
+          <attvalue for="8" value="&quot;#17d3b6&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="linecache" target="traceback" id="196">
+        <attvalues>
+          <attvalue for="8" value="&quot;#17d3b6&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="linecache" target="tracemalloc" id="197">
+        <attvalues>
+          <attvalue for="8" value="&quot;#17d3b6&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="linecache" target="warnings" id="198">
+        <attvalues>
+          <attvalue for="8" value="&quot;#17d3b6&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="locale" target="networkx" id="199">
+        <attvalues>
+          <attvalue for="8" value="&quot;#269b90&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="locale" target="pandas" id="200">
+        <attvalues>
+          <attvalue for="8" value="&quot;#269b90&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="lzma" target="pandas" id="201">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2fbcb8&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="lzma" target="shutil" id="202">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2fbcb8&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="lzma" target="zipfile" id="203">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2fbcb8&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="marshal" target="importlib" id="204">
+        <attvalues>
+          <attvalue for="8" value="&quot;#3bcace&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="marshal" target="pkgutil" id="205">
+        <attvalues>
+          <attvalue for="8" value="&quot;#3bcace&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="marshal" target="zipimport" id="206">
+        <attvalues>
+          <attvalue for="8" value="&quot;#3bcace&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="networkx" target="networkx_gdf_networkx_gdf" id="207">
+        <attvalues>
+          <attvalue for="8" value="&quot;#038895&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="networkx_gdf___version__" target="networkx_gdf" id="208">
+        <attvalues>
+          <attvalue for="8" value="&quot;#3a9eb0&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="networkx_gdf_networkx_gdf" target="networkx_gdf" id="209">
+        <attvalues>
+          <attvalue for="8" value="&quot;#3897a8&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="ntpath" target="pathlib" id="210">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2d96b4&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="ntpath" target="pkg_resources" id="211">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2d96b4&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="numpy" target="networkx" id="212">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0598d1&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="numpy" target="pandas" id="213">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0598d1&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="numpy" target="scipy" id="214">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0598d1&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="operator" target="collections" id="215">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0599e5&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="operator" target="copyreg" id="216">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0599e5&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="operator" target="datetime" id="217">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0599e5&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="operator" target="importlib" id="218">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0599e5&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="operator" target="inspect" id="219">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0599e5&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="operator" target="networkx" id="220">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0599e5&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="operator" target="pandas" id="221">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0599e5&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="operator" target="pathlib" id="222">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0599e5&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="operator" target="pkg_resources" id="223">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0599e5&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="operator" target="random" id="224">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0599e5&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="operator" target="typing" id="225">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0599e5&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="_osx_support" id="226">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="argparse" id="227">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="bz2" id="228">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="ctypes" id="229">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="fnmatch" id="230">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="genericpath" id="231">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="imp" id="232">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="importlib" id="233">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="inspect" id="234">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="linecache" id="235">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="locale" id="236">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="lzma" id="237">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="networkx" id="238">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="ntpath" id="239">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="numpy" id="240">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="pandas" id="241">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="pathlib" id="242">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="pkg_resources" id="243">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="pkgutil" id="244">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="platform" id="245">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="plistlib" id="246">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="posixpath" id="247">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="py_compile" id="248">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="random" id="249">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="shutil" id="250">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="socket" id="251">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="subprocess" id="252">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="sysconfig" id="253">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="tempfile" id="254">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="threading" id="255">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="zipfile" id="256">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="os" target="zipimport" id="257">
+        <attvalues>
+          <attvalue for="8" value="&quot;#04619f&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="pandas" target="networkx" id="258">
+        <attvalues>
+          <attvalue for="8" value="&quot;#035295&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="pandas" target="networkx_gdf_networkx_gdf" id="259">
+        <attvalues>
+          <attvalue for="8" value="&quot;#035295&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="pathlib" target="importlib" id="260">
+        <attvalues>
+          <attvalue for="8" value="&quot;#074991&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="pathlib" target="networkx" id="261">
+        <attvalues>
+          <attvalue for="8" value="&quot;#074991&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="pathlib" target="numpy" id="262">
+        <attvalues>
+          <attvalue for="8" value="&quot;#074991&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="pathlib" target="pandas" id="263">
+        <attvalues>
+          <attvalue for="8" value="&quot;#074991&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="pathlib" target="zipfile" id="264">
+        <attvalues>
+          <attvalue for="8" value="&quot;#074991&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="pkg_resources" target="networkx_gdf___version__" id="265">
+        <attvalues>
+          <attvalue for="8" value="&quot;#264673&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="pkgutil" target="pkg_resources" id="266">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2e436b&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="platform" target="pandas" id="267">
+        <attvalues>
+          <attvalue for="8" value="&quot;#1b409c&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="platform" target="pkg_resources" id="268">
+        <attvalues>
+          <attvalue for="8" value="&quot;#1b409c&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="plistlib" target="pkg_resources" id="269">
+        <attvalues>
+          <attvalue for="8" value="&quot;#263773&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="plistlib" target="platform" id="270">
+        <attvalues>
+          <attvalue for="8" value="&quot;#263773&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="posix" target="importlib" id="271">
+        <attvalues>
+          <attvalue for="8" value="&quot;#3b53ce&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="posix" target="shutil" id="272">
+        <attvalues>
+          <attvalue for="8" value="&quot;#3b53ce&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="posixpath" target="fnmatch" id="273">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0a1ecc&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="posixpath" target="importlib" id="274">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0a1ecc&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="posixpath" target="pathlib" id="275">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0a1ecc&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="posixpath" target="pkg_resources" id="276">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0a1ecc&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="posixpath" target="zipfile" id="277">
+        <attvalues>
+          <attvalue for="8" value="&quot;#0a1ecc&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="pprint" target="sysconfig" id="278">
+        <attvalues>
+          <attvalue for="8" value="&quot;#43479d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="pwd" target="pathlib" id="279">
+        <attvalues>
+          <attvalue for="8" value="&quot;#322fdb&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="pwd" target="posixpath" id="280">
+        <attvalues>
+          <attvalue for="8" value="&quot;#322fdb&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="pwd" target="shutil" id="281">
+        <attvalues>
+          <attvalue for="8" value="&quot;#322fdb&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="pwd" target="subprocess" id="282">
+        <attvalues>
+          <attvalue for="8" value="&quot;#322fdb&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="py_compile" target="zipfile" id="283">
+        <attvalues>
+          <attvalue for="8" value="&quot;#3d3781&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="random" target="networkx" id="284">
+        <attvalues>
+          <attvalue for="8" value="&quot;#4838a8&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="random" target="tempfile" id="285">
+        <attvalues>
+          <attvalue for="8" value="&quot;#4838a8&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="_osx_support" id="286">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="argparse" id="287">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="csv" id="288">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="email" id="289">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="fnmatch" id="290">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="importlib" id="291">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="inspect" id="292">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="locale" id="293">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="networkx" id="294">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="pandas" id="295">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="pathlib" id="296">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="pkg_resources" id="297">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="pkgutil" id="298">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="platform" id="299">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="plistlib" id="300">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="posixpath" id="301">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="pprint" id="302">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="sysconfig" id="303">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="textwrap" id="304">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="tokenize" id="305">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="typing" id="306">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="urllib" id="307">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="warnings" id="308">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="re" target="zipfile" id="309">
+        <attvalues>
+          <attvalue for="8" value="&quot;#2a04bd&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="reprlib" target="collections" id="310">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5e3db8&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="reprlib" target="functools" id="311">
+        <attvalues>
+          <attvalue for="8" value="&quot;#5e3db8&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="scipy" target="networkx" id="312">
+        <attvalues>
+          <attvalue for="8" value="&quot;#4c05db&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="scipy" target="pandas" id="313">
+        <attvalues>
+          <attvalue for="8" value="&quot;#4c05db&quot;" />
+          <attvalue for="10" value="&quot;4&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="shutil" target="argparse" id="314">
+        <attvalues>
+          <attvalue for="8" value="&quot;#3f0f8a&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="shutil" target="pandas" id="315">
+        <attvalues>
+          <attvalue for="8" value="&quot;#3f0f8a&quot;" />
+          <attvalue for="10" value="&quot;4&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="shutil" target="tempfile" id="316">
+        <attvalues>
+          <attvalue for="8" value="&quot;#3f0f8a&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="shutil" target="zipfile" id="317">
+        <attvalues>
+          <attvalue for="8" value="&quot;#3f0f8a&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="socket" target="platform" id="318">
+        <attvalues>
+          <attvalue for="8" value="&quot;#6c439d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="sre_constants" target="sre_compile" id="319">
+        <attvalues>
+          <attvalue for="8" value="&quot;#903bce&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="sre_constants" target="sre_parse" id="320">
+        <attvalues>
+          <attvalue for="8" value="&quot;#903bce&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="sre_parse" target="sre_compile" id="321">
+        <attvalues>
+          <attvalue for="8" value="&quot;#8b3db8&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="stat" target="genericpath" id="322">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b006f9&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="stat" target="ntpath" id="323">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b006f9&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="stat" target="pathlib" id="324">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b006f9&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="stat" target="pkg_resources" id="325">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b006f9&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="stat" target="posixpath" id="326">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b006f9&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="stat" target="shutil" id="327">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b006f9&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="stat" target="tempfile" id="328">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b006f9&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="stat" target="zipfile" id="329">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b006f9&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="string" target="networkx" id="330">
+        <attvalues>
+          <attvalue for="8" value="&quot;#a824d0&quot;" />
+          <attvalue for="10" value="&quot;4&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="string" target="ntpath" id="331">
+        <attvalues>
+          <attvalue for="8" value="&quot;#a824d0&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="string" target="pandas" id="332">
+        <attvalues>
+          <attvalue for="8" value="&quot;#a824d0&quot;" />
+          <attvalue for="10" value="&quot;4&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="struct" target="ctypes" id="333">
+        <attvalues>
+          <attvalue for="8" value="&quot;#cc16f3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="struct" target="pandas" id="334">
+        <attvalues>
+          <attvalue for="8" value="&quot;#cc16f3&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="struct" target="platform" id="335">
+        <attvalues>
+          <attvalue for="8" value="&quot;#cc16f3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="struct" target="plistlib" id="336">
+        <attvalues>
+          <attvalue for="8" value="&quot;#cc16f3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="struct" target="zipfile" id="337">
+        <attvalues>
+          <attvalue for="8" value="&quot;#cc16f3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="subprocess" target="_aix_support" id="338">
+        <attvalues>
+          <attvalue for="8" value="&quot;#772083&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="subprocess" target="platform" id="339">
+        <attvalues>
+          <attvalue for="8" value="&quot;#772083&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="sysconfig" target="_aix_support" id="340">
+        <attvalues>
+          <attvalue for="8" value="&quot;#852e8a&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="sysconfig" target="pkg_resources" id="341">
+        <attvalues>
+          <attvalue for="8" value="&quot;#852e8a&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="tempfile" target="_osx_support" id="342">
+        <attvalues>
+          <attvalue for="8" value="&quot;#7a1e79&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="tempfile" target="networkx" id="343">
+        <attvalues>
+          <attvalue for="8" value="&quot;#7a1e79&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="tempfile" target="pkg_resources" id="344">
+        <attvalues>
+          <attvalue for="8" value="&quot;#7a1e79&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="textwrap" target="argparse" id="345">
+        <attvalues>
+          <attvalue for="8" value="&quot;#f906e8&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="textwrap" target="importlib" id="346">
+        <attvalues>
+          <attvalue for="8" value="&quot;#f906e8&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="textwrap" target="pandas" id="347">
+        <attvalues>
+          <attvalue for="8" value="&quot;#f906e8&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="textwrap" target="pkg_resources" id="348">
+        <attvalues>
+          <attvalue for="8" value="&quot;#f906e8&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="threading" target="subprocess" id="349">
+        <attvalues>
+          <attvalue for="8" value="&quot;#913084&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="threading" target="zipfile" id="350">
+        <attvalues>
+          <attvalue for="8" value="&quot;#913084&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="token" target="inspect" id="351">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c247aa&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="token" target="tokenize" id="352">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c247aa&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="tokenize" target="imp" id="353">
+        <attvalues>
+          <attvalue for="8" value="&quot;#af0984&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="tokenize" target="importlib" id="354">
+        <attvalues>
+          <attvalue for="8" value="&quot;#af0984&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="tokenize" target="inspect" id="355">
+        <attvalues>
+          <attvalue for="8" value="&quot;#af0984&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="tokenize" target="linecache" id="356">
+        <attvalues>
+          <attvalue for="8" value="&quot;#af0984&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="tokenize" target="pandas" id="357">
+        <attvalues>
+          <attvalue for="8" value="&quot;#af0984&quot;" />
+          <attvalue for="10" value="&quot;4&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="traceback" target="py_compile" id="358">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c43195&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="traceback" target="threading" id="359">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c43195&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="traceback" target="warnings" id="360">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c43195&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="tracemalloc" target="warnings" id="361">
+        <attvalues>
+          <attvalue for="8" value="&quot;#964075&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="contextlib" id="362">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="copy" id="363">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="ctypes" id="364">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="dis" id="365">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="enum" id="366">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="functools" id="367">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="imp" id="368">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="importlib" id="369">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="inspect" id="370">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="networkx" id="371">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="pandas" id="372">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="pkg_resources" id="373">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="pkgutil" id="374">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="pprint" id="375">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="subprocess" id="376">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="sysconfig" id="377">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="tempfile" id="378">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="typing" id="379">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="types" target="urllib" id="380">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ef0688&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="typing" target="functools" id="381">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b3045b&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="typing" target="importlib" id="382">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b3045b&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="typing" target="networkx" id="383">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b3045b&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="typing" target="networkx_gdf_networkx_gdf" id="384">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b3045b&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="typing" target="pandas" id="385">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b3045b&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="urllib" target="pathlib" id="386">
+        <attvalues>
+          <attvalue for="8" value="&quot;#b6537e&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="argparse" id="387">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="ast" id="388">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="enum" id="389">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="imp" id="390">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="importlib" id="391">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="inspect" id="392">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="io" id="393">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="locale" id="394">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="networkx" id="395">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="numpy" id="396">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="pandas" id="397">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="pathlib" id="398">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="pkg_resources" id="399">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="pkgutil" id="400">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="random" id="401">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="scipy" id="402">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="sre_parse" id="403">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="subprocess" id="404">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="sysconfig" id="405">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="tempfile" id="406">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="threading" id="407">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="urllib" id="408">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="warnings" target="zipfile" id="409">
+        <attvalues>
+          <attvalue for="8" value="&quot;#c7054d&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="weakref" target="copy" id="410">
+        <attvalues>
+          <attvalue for="8" value="&quot;#d31751&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="weakref" target="functools" id="411">
+        <attvalues>
+          <attvalue for="8" value="&quot;#d31751&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="weakref" target="pandas" id="412">
+        <attvalues>
+          <attvalue for="8" value="&quot;#d31751&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="weakref" target="tempfile" id="413">
+        <attvalues>
+          <attvalue for="8" value="&quot;#d31751&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="xml" target="networkx" id="414">
+        <attvalues>
+          <attvalue for="8" value="&quot;#db2f59&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="xml" target="pandas" id="415">
+        <attvalues>
+          <attvalue for="8" value="&quot;#db2f59&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="xml" target="plistlib" id="416">
+        <attvalues>
+          <attvalue for="8" value="&quot;#db2f59&quot;" />
+          <attvalue for="10" value="&quot;3&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="zipfile" target="importlib" id="417">
+        <attvalues>
+          <attvalue for="8" value="&quot;#82172a&quot;" />
+          <attvalue for="10" value="&quot;2&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="zipfile" target="pkg_resources" id="418">
+        <attvalues>
+          <attvalue for="8" value="&quot;#82172a&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="zipfile" target="shutil" id="419">
+        <attvalues>
+          <attvalue for="8" value="&quot;#82172a&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="zipimport" target="pkg_resources" id="420">
+        <attvalues>
+          <attvalue for="8" value="&quot;#8a2e39&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="zipimport" target="pkgutil" id="421">
+        <attvalues>
+          <attvalue for="8" value="&quot;#8a2e39&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="zlib" target="shutil" id="422">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ce3b44&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="zlib" target="zipfile" id="423">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ce3b44&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="zlib" target="zipimport" id="424">
+        <attvalues>
+          <attvalue for="8" value="&quot;#ce3b44&quot;" />
+          <attvalue for="9" value="0" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
