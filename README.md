@@ -10,7 +10,7 @@ these graphs. <br>
 🟢 Block Vulnerable functions, even the ones deep in the call stack. <br>
 🟢 A toolkit for security of python packages and graph analytics. <br>
 🟢 Easy to use API. <br>
-🟢 Export graphs as pickle, GDP, GML, JSON, adjlist etc. <br>
+🟢 Export graphs as GEXF File for further analysis. <br>
 
 ### Installation
 🔴 Download the wheel from `https://github.com/aadya940/pygraas`. <br>
