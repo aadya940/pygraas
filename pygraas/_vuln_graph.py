@@ -7,6 +7,7 @@ from pydeps.pydeps import pydeps
 from pydeps import cli
 import subprocess
 import os
+import re
 from copy import deepcopy
 import shutil
 import random
@@ -19,7 +20,8 @@ from ._utils import _clone_package, _cleanup_dir
 import importlib.resources
 
 with importlib.resources.open_text("pygraas", "insecure_full.json") as _f:
-    INSECURE_FULL = json.load(_f)
+    content = _f.read()
+    INSECURE_FULL = json.loads(content)
 
 
 class VulnerabilityGraph:
