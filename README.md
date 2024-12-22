@@ -1,7 +1,7 @@
 ### PyGraas: A Vulnerability Analysis and Restriction Layer for Python Packages.
 
 We ensure runtime safety by providing a Graph Analytics and
-Restriction layer on top of Python Packages.
+Restriction layer on top of Python Packages. 
 
 ### Features:
 🟢  Build DependencyGraph for Python Packages. <br>
