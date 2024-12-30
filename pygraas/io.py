@@ -32,13 +32,13 @@ def export_graph(graph, filename, file_format="gexf"):
         raise ValueError(f"File format {file_format} not supported.")
 
 
-def load_graph(filename, file_format="pickle"):
+def load_graph(filename, file_format="gexf"):
     """Load a NetworkX graph from various file formats.
 
     Parameters
     ----------
     filename : str
-        Name of the file with its extension (e.g., file1.pickle, file2.gdf).
+        Name of the file with its extension (e.g., filename.gexf).
     file_format : str, optional
         Load graph with format `file_format`. Currently, only supporting
         `gexf`.
