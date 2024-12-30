@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 import os
 import shutil
 import sys
+import seaborn as sns
+from collections import Counter
 
 from ._utils import get_package
 
@@ -90,3 +92,21 @@ class DependencyGraph:
             raise ValueError("Graph is not built yet. Call `build_graph` first.")
 
         return list(self.graph.edges())
+
+    def plot_degree_distribution(self, save=False, path=None):
+        """Plots the degree distribution of the vulnerable graph nodes."""
+        _graph = self.graph
+        _degree_count = [deg for _, deg in _graph.degree()]
+        degree_freq = Counter(_degree_count)
+        degrees, counts = zip(*sorted(degree_freq.items()))
+        sns.barplot(x=list(degrees), y=list(counts), color="blue")
+        plt.xlabel("Degree")
+        plt.ylabel("Frequency")
+        plt.title("Degree Distribution")
+        if save:
+            if path:
+                plt.savefig(path)
+            else:
+                os.makedirs("distribution/", exist_ok=True)
+                plt.savefig(f"distribution/{self.package_name}_dist.png")
+        plt.show()

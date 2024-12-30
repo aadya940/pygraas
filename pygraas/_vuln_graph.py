@@ -12,6 +12,8 @@ from copy import deepcopy
 import shutil
 import random
 from functools import cached_property
+from collections import Counter
+import seaborn as sns
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from ._depgraph import DependencyGraph
@@ -173,3 +175,21 @@ class VulnerabilityGraph:
                     paths.append(result)
 
         return paths
+
+    def plot_vulnerable_degree_distribution(self, save=False, path=None):
+        _graph = self.graph
+        vul_nodes = self.get_vulnerables()
+        _degree_count = [self.graph.graph.degree(node) for node in vul_nodes]
+        degree_freq = Counter(_degree_count)
+        degrees, counts = zip(*sorted(degree_freq.items()))
+        sns.barplot(x=list(degrees), y=list(counts), color="blue")
+        plt.xlabel("Degree")
+        plt.ylabel("Frequency")
+        plt.title("Degree Distribution")
+        if save:
+            if path:
+                plt.savefig(path)
+            else:
+                os.makedirs("distribution_vul/", exist_ok=True)
+                plt.savefig(f"distribution_vul/{self.graph.package_name}_dist_vul.png")
+        plt.show()
