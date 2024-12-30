@@ -102,8 +102,8 @@ class VulnerabilityGraph:
             assert "is_vulnerable" in node.keys()
             assert "color" in node.keys()
 
-            if node["is_vulnerable"] == "False":
-                node["is_vulnerable"] = "True"
+            if node["is_vulnerable"] == False:
+                node["is_vulnerable"] = True
                 node["color"] = "red"
                 _cve, _v, _advisory = self._get_vulnerability_metadata(vulnerabilities)
                 node["CVE"] = str(_cve)
@@ -130,7 +130,7 @@ class VulnerabilityGraph:
     def get_vulnerables(self, details=False):
         vulnerables = []
         for node in self.graph.graph.nodes:
-            if self.graph.graph.nodes[node]["is_vulnerable"] == "True":
+            if self.graph.graph.nodes[node]["is_vulnerable"] == True:
                 if details:
                     vulnerables.append({node: self.graph.graph.nodes(data=True)[node]})
                 else:
