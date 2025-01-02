@@ -79,7 +79,7 @@ def _replace_weight_in_gexf(file_path):
 
         # Replace the target string
         for i in range(9):
-            content = content.replace(f'weight="&quot;{i}&quot;"', 'weight=f"{i}"')
+            content = content.replace(f'weight="&quot;{i}&quot;"', f'weight="{i}"')
 
         # Write the updated content back to the file
         with open(file_path, "w", encoding="utf-8") as file:
