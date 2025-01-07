@@ -3,6 +3,9 @@ import shutil
 import os
 from pathlib import Path
 import warnings
+from pydeps.pydeps import pydeps
+from ._utils import _clone_package, _cleanup_dir
+from pydeps import cli
 
 # os.system is potentially unsafe.
 # Use some other library, maybe `subprocess`?
@@ -78,3 +81,34 @@ def _get_package_no_clone(package_name):
 def _cleanup_dir(folder):
     if folder in os.listdir("."):
         shutil.rmtree(folder)
+
+
+def _set_external(graph, folder=None, allow_clone=False):
+    # Graph is a dependency Graph.
+    if folder is None:
+        _clone_package(graph.package_name, graph.package_url, allow_clone)
+
+    _args = [
+        "pydeps",
+        "-vv",
+        f"--max-bacon={3}",
+        "--external",
+        f"{graph.package_name}",
+    ]
+
+    result = subprocess.run(
+        _args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
+    )
+
+    if result.returncode != 0:
+        raise RuntimeError(f"pydeps failed: {result.stderr}")
+
+    try:
+        result_list = json.loads(result.stdout)
+    except json.JSONDecodeError:
+        raise ValueError("Failed to decode pydeps output")
+
+    for _pkg in result_list:
+        node = graph.graph.nodes[_pkg]
+        assert node is not None
+        node["external"] = True

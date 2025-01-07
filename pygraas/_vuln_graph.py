@@ -75,6 +75,8 @@ class VulnerabilityGraph:
             vulnerabilities = INSECURE_FULL.get(_package) or INSECURE_FULL.get(
                 _package.lower()
             )
+            node, _bool = self._get_graph_node(_package)
+            node["external"] = True
 
             if vulnerabilities:
                 node, _bool = self._get_graph_node(_package)
