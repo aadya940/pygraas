@@ -4,8 +4,9 @@ import os
 from pathlib import Path
 import warnings
 from pydeps.pydeps import pydeps
-from ._utils import _clone_package, _cleanup_dir
 from pydeps import cli
+import subprocess
+import json
 
 # os.system is potentially unsafe.
 # Use some other library, maybe `subprocess`?
@@ -85,15 +86,15 @@ def _cleanup_dir(folder):
 
 def _set_external(graph, folder=None, allow_clone=False):
     # Graph is a dependency Graph.
-    if folder is None:
-        _clone_package(graph.package_name, graph.package_url, allow_clone)
+    # if folder is None:
+    #     _get_package_no_clone(graph.graph.package_name)
 
     _args = [
         "pydeps",
         "-vv",
         f"--max-bacon={3}",
         "--external",
-        f"{graph.package_name}",
+        f"{graph.graph.package_name}",
     ]
 
     result = subprocess.run(
@@ -109,6 +110,10 @@ def _set_external(graph, folder=None, allow_clone=False):
         raise ValueError("Failed to decode pydeps output")
 
     for _pkg in result_list:
-        node = graph.graph.nodes[_pkg]
-        assert node is not None
-        node["external"] = True
+        try:
+            node = graph.graph.graph.nodes[_pkg]
+            assert node is not None
+            node["external"] = True
+            print(f"Marked package {_pkg} as external.")
+        except:
+            pass
