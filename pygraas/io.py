@@ -63,7 +63,8 @@ def load_graph(filename, file_format="gexf"):
 
 def _replace_weight_in_gexf(file_path):
     """
-    Opens a GEXF file and replaces weight="&quot;2&quot;" with weight="2".
+    Opens a GEXF file and replaces weight="&quot;2&quot;" with weight="2"
+    preventing loading errors.
 
     Parameters:
         file_path (str): Path to the GEXF file.

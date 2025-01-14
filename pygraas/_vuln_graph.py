@@ -195,3 +195,23 @@ class VulnerabilityGraph:
                 os.makedirs("distribution_vul/", exist_ok=True)
                 plt.savefig(f"distribution_vul/{self.graph.package_name}_dist_vul.png")
         plt.show()
+
+    def get_nearest_vulnerable_modules(self):
+        """
+        For each vulnerable vertex, find the set of nearest vertices which are “transparent”.
+        Now, take the union of this set. This defines the set of patches that need to be
+        applied to make the entire network “safe”.
+        """
+        _vul_nodes = self.get_vulnerables()
+        _gph = self.graph.graph
+
+        transparent_neighbors = set()
+
+        for vul_node in _vul_nodes:
+            # Get neighbors of the vulnerable node
+            neighbors = nx.all_neighbors(_gph, vul_node)
+            for neighbor in neighbors:
+                if neighbor not in _vul_nodes:
+                    transparent_neighbors.add(neighbor)
+
+        return list(transparent_neighbors)
