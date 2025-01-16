@@ -216,7 +216,10 @@ class VulnerabilityGraph:
             # Get neighbors of the vulnerable node
             neighbors = nx.all_neighbors(_gph, vul_node)
             for neighbor in neighbors:
-                if neighbor not in _vul_nodes:
-                    transparent_neighbors.add(neighbor)
+                try:
+                    if not _gph[neighbor]["external"]:
+                        transparent_neighbors.add(neighbor)
+                except:
+                    pass
 
         return list(transparent_neighbors)
