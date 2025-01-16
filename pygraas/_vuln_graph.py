@@ -76,7 +76,12 @@ class VulnerabilityGraph:
                 _package.lower()
             )
             node, _bool = self._get_graph_node(_package)
-            node["external"] = True
+            
+            try:
+                node["external"] = True
+            except:
+                print(f"Passed external assignment for {_package}")
+                pass
 
             if vulnerabilities:
                 node, _bool = self._get_graph_node(_package)
