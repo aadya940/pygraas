@@ -201,25 +201,39 @@ class VulnerabilityGraph:
                 plt.savefig(f"distribution_vul/{self.graph.package_name}_dist_vul.png")
         plt.show()
 
-    def get_nearest_vulnerable_modules(self):
+        def get_nearest_vulnerable_modules(self):
         """
-        For each vulnerable vertex, find the set of nearest vertices which are “transparent”.
-        Now, take the union of this set. This defines the set of patches that need to be
-        applied to make the entire network “safe”.
+        For each vulnerable vertex, find the set of nearest vertices which are “transparent” or 
+        part of the BFS queue.This defines the set of patches that need to be applied to make 
+        the entire network “safe”.
         """
+        # Get the list of vulnerable nodes
         _vul_nodes = self.get_vulnerables()
         _gph = self.graph.graph
 
-        transparent_neighbors = set()
+        # Initialize the BFS queue and the transparent set
+        queue = list(_vul_nodes)  # Add all vulnerable vertices to the queue
+        transparent_set = set()
 
-        for vul_node in _vul_nodes:
-            # Get neighbors of the vulnerable node
+        while queue:
+            # Pick the first vulnerable vertex from the queue
+            vul_node = queue.pop(0)
+
+            # Iterate through each neighbor of the vulnerable node
             neighbors = nx.all_neighbors(_gph, vul_node)
             for neighbor in neighbors:
+                # Check if the neighbor is a "black-box"
                 try:
-                    if not _gph[neighbor]["external"]:
-                        transparent_neighbors.add(neighbor)
-                except:
+                    if _gph[neighbor].get("external", False):
+                        # Add black-box neighbors to the queue
+                        queue.append(neighbor)
+                    else:
+                        # Mark non-external neighbors as "transparent" and add to the set
+                        transparent_set.add(neighbor)
+                except KeyError:
+                    # Handle cases where neighbor properties might not exist
                     pass
 
-        return list(transparent_neighbors)
+        # Return the union of the transparent set as the required patches
+        return list(transparent_set)
+
