@@ -15,6 +15,7 @@ from functools import cached_property
 from collections import Counter
 import seaborn as sns
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from collections import deque
 
 from ._depgraph import DependencyGraph
 from ._utils import _clone_package, _cleanup_dir
@@ -76,7 +77,7 @@ class VulnerabilityGraph:
                 _package.lower()
             )
             node, _bool = self._get_graph_node(_package)
-            
+
             try:
                 node["external"] = True
             except:
@@ -184,6 +185,7 @@ class VulnerabilityGraph:
         return paths
 
     def plot_vulnerable_degree_distribution(self, save=False, path=None):
+        """plot degree distribution as a matplotlib histogram."""
         _graph = self.graph
         vul_nodes = self.get_vulnerables()
         _degree_count = [self.graph.graph.degree(node) for node in vul_nodes]
@@ -201,39 +203,33 @@ class VulnerabilityGraph:
                 plt.savefig(f"distribution_vul/{self.graph.package_name}_dist_vul.png")
         plt.show()
 
-        def get_nearest_vulnerable_modules(self):
-        """
-        For each vulnerable vertex, find the set of nearest vertices which are “transparent” or 
-        part of the BFS queue.This defines the set of patches that need to be applied to make 
-        the entire network “safe”.
-        """
+    def get_nearest_vulnerable_modules(self):
+        """Optimized function to find the nearest "transparent" vertices for each vulnerable vertex."""
         # Get the list of vulnerable nodes
         _vul_nodes = self.get_vulnerables()
         _gph = self.graph.graph
 
         # Initialize the BFS queue and the transparent set
-        queue = list(_vul_nodes)  # Add all vulnerable vertices to the queue
+        queue = deque(_vul_nodes)  # Use deque for faster pops
         transparent_set = set()
+        visited = set(_vul_nodes)  # Track visited nodes to avoid redundant processing
 
         while queue:
-            # Pick the first vulnerable vertex from the queue
-            vul_node = queue.pop(0)
+            # Pop the first vulnerable vertex from the queue
+            vul_node = queue.popleft()
 
             # Iterate through each neighbor of the vulnerable node
-            neighbors = nx.all_neighbors(_gph, vul_node)
-            for neighbor in neighbors:
-                # Check if the neighbor is a "black-box"
-                try:
-                    if _gph[neighbor].get("external", False):
-                        # Add black-box neighbors to the queue
-                        queue.append(neighbor)
-                    else:
-                        # Mark non-external neighbors as "transparent" and add to the set
-                        transparent_set.add(neighbor)
-                except KeyError:
-                    # Handle cases where neighbor properties might not exist
-                    pass
+            for neighbor in _gph[vul_node]:
+                if neighbor in visited:
+                    continue  # Skip already visited neighbors
+
+                visited.add(neighbor)  # Mark the neighbor as visited
+                if _gph.nodes.get(neighbor, {}).get("external", False):
+                    # Add black-box neighbors to the queue
+                    queue.append(neighbor)
+                else:
+                    # Mark non-external neighbors as "transparent" and add to the set
+                    transparent_set.add(neighbor)
 
         # Return the union of the transparent set as the required patches
         return list(transparent_set)
-
