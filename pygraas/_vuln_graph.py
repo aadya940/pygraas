@@ -230,6 +230,9 @@ class VulnerabilityGraph:
                 else:
                     # Mark non-external neighbors as "transparent" and add to the set
                     transparent_set.add(neighbor)
+                    self.graph.graph.nodes[neighbor][
+                        "nearest_transparent_vulnerable"
+                    ] = True
 
         # Return the union of the transparent set as the required patches
         return list(transparent_set)

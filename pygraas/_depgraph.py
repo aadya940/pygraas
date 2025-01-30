@@ -45,6 +45,7 @@ class DependencyGraph:
         nx.set_node_attributes(self.graph, "None", "advisory")
         nx.set_node_attributes(self.graph, "blue", "color")
         nx.set_node_attributes(self.graph, False, "external")
+        nx.set_node_attributes(self.graph, False, "nearest_transparent_vulnerable")
         return self.graph
 
     def _generate_dot_file(self, max_bacon):
