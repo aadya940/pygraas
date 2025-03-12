@@ -18,6 +18,14 @@ class DependencyGraph:
     """Build a NetworkX Dependency Graph."""
 
     def __init__(self, package_name: str, package_url: str, allow_clone=True):
+        """
+        Initialize the DependencyGraph.
+
+        Parameters:
+        - package_name (str): The name of the package to analyze.
+        - package_url (str): The URL of the package repository.
+        - allow_clone (bool): Whether to allow cloning the package.
+        """
         self.package_name = package_name.lower()
         self.dot_file = f"{self.package_name}_deps.dot"
         self.graph = None
@@ -32,6 +40,15 @@ class DependencyGraph:
             raise ValueError("Failed to clone.")
 
     def build_graph(self, max_bacon=2):
+        """
+        Build the dependency graph.
+
+        Parameters:
+        - max_bacon (int): The maximum depth of dependencies to include.
+
+        Returns:
+        - Graph: The constructed dependency graph.
+        """
         _is_file = self._generate_dot_file(
             max_bacon=max_bacon,
         )

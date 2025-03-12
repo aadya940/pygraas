@@ -13,24 +13,32 @@ import json
 
 
 def get_package(package_name, package_url=None, clone=True):
+    """
+    Get the package source code.
+
+    Parameters:
+    - package_name (str): The name of the package to retrieve.
+    - package_url (str): The URL of the package repository (required if cloning).
+    - clone (bool): Whether to clone the package from the repository.
+    """
     if clone:
         if package_url is None:
-            raise ValueError("`package_url` kwarg not recieved in `clone` mode.")
+            raise ValueError("`package_url` kwarg not received in `clone` mode.")
         else:
             _clone_package(package_name, package_url)
-
-    elif not clone:
+    else:
         warnings.warn(
             """
-        Not using `clone` mode builds the package source code by unzipping the wheels,
-        hence the `C/C++` Extension files present in the source code will be lost due
-        to the compiled nature of the wheel.
-        """
+            Not using `clone` mode builds the package source code by unzipping the wheels,
+            hence the `C/C++` Extension files present in the source code will be lost due
+            to the compiled nature of the wheel.
+            """
         )
         _get_package_no_clone(package_name)
 
 
 def _clone_package(package_name, package_url):
+    """Clone the package from the given URL."""
     try:
         if package_name not in os.listdir("."):
             os.system(f"git clone {package_url}.git")
@@ -41,6 +49,7 @@ def _clone_package(package_name, package_url):
 
 
 def _get_package_no_clone(package_name):
+    """Retrieve the package source code without cloning."""
     try:
         # Step 1: Locate the installed package
         spec = importlib.util.find_spec(package_name)
@@ -80,11 +89,13 @@ def _get_package_no_clone(package_name):
 
 
 def _cleanup_dir(folder):
+    """Remove the specified directory if it exists."""
     if folder in os.listdir("."):
         shutil.rmtree(folder)
 
 
 def _set_external(graph, folder=None, allow_clone=False):
+    """Set external nodes in the graph based on external dependencies."""
     # Graph is a dependency Graph.
     # if folder is None:
     #     _get_package_no_clone(graph.graph.package_name)
@@ -115,5 +126,5 @@ def _set_external(graph, folder=None, allow_clone=False):
             assert node is not None
             node["external"] = True
             print(f"Marked package {_pkg} as external.")
-        except:
+        except KeyError:
             pass

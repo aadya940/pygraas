@@ -3,3 +3,4 @@ matplotlib
 pydeps
 networkx
 networkx-gdf
+seaborn

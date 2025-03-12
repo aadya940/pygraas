@@ -28,7 +28,16 @@ with importlib.resources.open_text("pygraas", "insecure_full.json") as _f:
 
 
 class VulnerabilityGraph:
+    """Class to build and analyze a vulnerability graph based on a dependency graph."""
+
     def __init__(self, graph: DependencyGraph, allow_clone=False):
+        """
+        Initialize the VulnerabilityGraph.
+
+        Parameters:
+        - graph (DependencyGraph): The dependency graph to analyze.
+        - allow_clone (bool): Whether to allow cloning the package.
+        """
         self.graph = deepcopy(graph)
         self.checked_packages = set()
         self.allow_clone = allow_clone
@@ -95,6 +104,7 @@ class VulnerabilityGraph:
         return self.graph
 
     def _get_graph_node(self, package):
+        """Retrieve the graph node for a given package."""
         try:
             node = self.graph.graph.nodes[package]
             assert node is not None
@@ -103,6 +113,7 @@ class VulnerabilityGraph:
             return None, False
 
     def _mark_vulnerable(self, node, vulnerabilities, package):
+        """Mark a node as vulnerable and update its metadata."""
         if package not in self.checked_packages:
             assert "CVE" in node.keys()
             assert "version" in node.keys()
@@ -120,6 +131,7 @@ class VulnerabilityGraph:
                 self.checked_packages.add(package)
 
     def _get_vulnerability_metadata(self, vulnerabilities):
+        """Extract vulnerability metadata from the vulnerabilities list."""
         if isinstance(vulnerabilities, dict):
             vulnerabilities = [vulnerabilities]
 
@@ -136,6 +148,14 @@ class VulnerabilityGraph:
         return _cve, _v, _advisory
 
     def get_vulnerables(self, details=False):
+        """Get a list of vulnerable nodes in the graph.
+
+        Parameters:
+        - details (bool): Whether to return detailed information about vulnerabilities.
+
+        Returns:
+        - List: A list of vulnerable nodes.
+        """
         vulnerables = []
         for node in self.graph.graph.nodes:
             if self.graph.graph.nodes[node]["is_vulnerable"] == True:
@@ -147,6 +167,15 @@ class VulnerabilityGraph:
         return vulnerables
 
     def get_degree(self, node, details=True):
+        """Get the in-degree and out-degree of a node.
+
+        Parameters:
+        - node (str): The node to analyze.
+        - details (bool): Whether to return detailed degree information.
+
+        Returns:
+        - dict or int: Degree information or just the degree value.
+        """
         if details:
             in_degree = self.graph.graph.in_degree(node)
             out_degree = self.graph.graph.out_degree(node)
