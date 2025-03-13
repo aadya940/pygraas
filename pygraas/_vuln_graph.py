@@ -19,6 +19,7 @@ from collections import deque
 
 from ._depgraph import DependencyGraph
 from ._utils import _clone_package, _cleanup_dir
+from .io import export_graph
 
 import importlib.resources
 
@@ -265,3 +266,7 @@ class VulnerabilityGraph:
 
         # Return the union of the transparent set as the required patches
         return list(transparent_set)
+    
+    def save_graph(self, path):
+        """Save the vulnerability graph to a file."""
+        export_graph(self.graph, path)

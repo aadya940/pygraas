@@ -7,6 +7,7 @@ import shutil
 import sys
 import seaborn as sns
 from collections import Counter
+import threading  # Import threading module
 
 from ._utils import get_package
 
@@ -67,23 +68,27 @@ class DependencyGraph:
 
     def _generate_dot_file(self, max_bacon):
         """Generates the DOT file using pydeps."""
+        
+        def run_pydots():
+            _args = [
+                "-vv",  # Verbose
+                f"--max-bacon={max_bacon}",
+                "--pylib",
+                "--cluster",  # Cluster dependencies for clarity
+                f"--dot-output={self.dot_file}",
+                "--show-dot",
+                self.package_name,  # The package to analyze
+            ]
+            try:
+                result = pydeps(**cli.parse_args(_args))
+            except SystemExit as e:
+                if e.code != 0:
+                    raise RuntimeError(f"pydeps failed with exit code {e.code}")
 
-        _args = [
-            "-vv",  # Verbose
-            f"--max-bacon={max_bacon}",
-            "--pylib",
-            "--cluster",  # Cluster dependencies for clarity
-            f"--dot-output={self.dot_file}",
-            "--show-dot",
-            self.package_name,  # The package to analyze
-        ]
-
-        try:
-            result = pydeps(**cli.parse_args(_args))
-
-        except SystemExit as e:
-            if e.code != 0:
-                raise RuntimeError(f"pydeps failed with exit code {e.code}")
+        # Start the thread
+        thread = threading.Thread(target=run_pydots)
+        thread.start()
+        thread.join()  # Wait for the thread to complete
 
         return True
 

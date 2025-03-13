@@ -1,6 +1,8 @@
 import pickle
 import networkx as nx
 import os
+from ._depgraph import DependencyGraph
+from ._vuln_graph import VulnerabilityGraph
 
 
 __all__ = [
@@ -27,8 +29,14 @@ def export_graph(graph, filename, file_format="gexf"):
     None
     """
     if file_format == "gexf":
-        nx.write_gexf(graph, filename)
-        return None
+        if isinstance(graph, nx.Graph):
+            nx.write_gexf(graph, filename)
+        elif isinstance(graph, DependencyGraph):
+            nx.write_gexf(graph.graph, filename)
+        elif isinstance(graph, VulnerabilityGraph):
+            nx.write_gexf(graph.graph.graph, filename)
+        else:
+            raise ValueError(f"File format {file_format} not supported.")
     else:
         raise ValueError(f"File format {file_format} not supported.")
 
