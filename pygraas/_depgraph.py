@@ -73,7 +73,7 @@ class DependencyGraph:
             _args = [
                 "-vv",  # Verbose
                 f"--max-bacon={max_bacon}",
-                "--pylib",
+                "--pylib-all",
                 "--cluster",  # Cluster dependencies for clarity
                 f"--dot-output={self.dot_file}",
                 "--show-dot",
