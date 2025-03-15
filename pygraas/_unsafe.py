@@ -1,4 +1,4 @@
-"""List of unsafe python functions taken from 
+"""List of unsafe python functions taken from
 https://xcg.tech.gov.sg/packages/dangerousfunctions/
 """
 

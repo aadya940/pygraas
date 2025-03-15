@@ -8,6 +8,7 @@ import sys
 import seaborn as sns
 from collections import Counter
 import threading  # Import threading module
+from unittest.mock import patch
 
 from ._utils import get_package
 
@@ -68,19 +69,22 @@ class DependencyGraph:
 
     def _generate_dot_file(self, max_bacon):
         """Generates the DOT file using pydeps."""
-        
+
         def run_pydots():
             _args = [
-                "-vv",  # Verbose
-                f"--max-bacon={max_bacon}",
+                "-vv",
+                f"--max-bacon={max_bacon if max_bacon is not None else 2}",
                 "--pylib-all",
-                "--cluster",  # Cluster dependencies for clarity
-                f"--dot-output={self.dot_file}",
+                "--cluster",
+                f"--dot-output={self.dot_file}",  # Save the DOT file
                 "--show-dot",
-                self.package_name,  # The package to analyze
+                self.package_name,
             ]
+
             try:
-                result = pydeps(**cli.parse_args(_args))
+                with patch("pydeps.dot.display_svg") as mock_fetch:
+                    mock_fetch.return_value = None
+                    result = pydeps(**cli.parse_args(_args))
             except SystemExit as e:
                 if e.code != 0:
                     raise RuntimeError(f"pydeps failed with exit code {e.code}")

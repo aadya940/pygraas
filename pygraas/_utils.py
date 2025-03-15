@@ -7,6 +7,7 @@ from pydeps.pydeps import pydeps
 from pydeps import cli
 import subprocess
 import json
+import sys
 
 # os.system is potentially unsafe.
 # Use some other library, maybe `subprocess`?
@@ -52,13 +53,18 @@ def _get_package_no_clone(package_name):
     """Retrieve the package source code without cloning."""
     try:
         # Step 1: Locate the installed package
-        spec = importlib.util.find_spec(package_name)
-        if not spec or not spec.origin:
-            print(f"Package {package_name} not found.")
-            return False
+        if not sys.modules.get(package_name):
+            spec = importlib.util.find_spec(package_name)
+            if not spec or not spec.origin:
+                print(f"Package {package_name} not found.")
+                return False
 
-        package_path = Path(spec.origin).parent
-        print(f"Located package: {package_path}")
+            package_path = Path(spec.origin).parent
+            print(f"Located package: {package_path}")
+
+        else:
+            package_path = sys.modules[package_name].__file__[: -1 * len("__init__.py")]
+            print(f"Located package: {package_path}")
 
         # Step 2: Copy the source code to the current directory
         destination_dir = Path.cwd() / package_name
