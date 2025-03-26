@@ -1,6 +1,8 @@
 pydot
 matplotlib
 pydeps
-networkx
+networkx>=3.0
 networkx-gdf
 seaborn
+python-graphblas[default]
+graphblas-algorithms 

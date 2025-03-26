@@ -10,7 +10,7 @@ from collections import Counter
 import threading  # Import threading module
 from unittest.mock import patch
 
-from ._utils import get_package
+from ._utils import get_package, _cleanup_dir
 
 from pydeps.pydeps import pydeps
 from pydeps import cli
@@ -76,6 +76,7 @@ class DependencyGraph:
                 f"--max-bacon={max_bacon if max_bacon is not None else 2}",
                 "--pylib-all",
                 "--cluster",
+                "--show-cycles",
                 f"--dot-output={self.dot_file}",  # Save the DOT file
                 "--show-dot",
                 self.package_name,
@@ -86,6 +87,7 @@ class DependencyGraph:
                     mock_fetch.return_value = None
                     result = pydeps(**cli.parse_args(_args))
             except SystemExit as e:
+                _cleanup_dir(self.package_name)
                 if e.code != 0:
                     raise RuntimeError(f"pydeps failed with exit code {e.code}")
 
@@ -120,21 +122,3 @@ class DependencyGraph:
             raise ValueError("Graph is not built yet. Call `build_graph` first.")
 
         return list(self.graph.edges())
-
-    def plot_degree_distribution(self, save=False, path=None):
-        """Plots the degree distribution of the vulnerable graph nodes."""
-        _graph = self.graph
-        _degree_count = [deg for _, deg in _graph.degree()]
-        degree_freq = Counter(_degree_count)
-        degrees, counts = zip(*sorted(degree_freq.items()))
-        sns.barplot(x=list(degrees), y=list(counts), color="blue")
-        plt.xlabel("Degree")
-        plt.ylabel("Frequency")
-        plt.title("Degree Distribution")
-        if save:
-            if path:
-                plt.savefig(path)
-            else:
-                os.makedirs("distribution/", exist_ok=True)
-                plt.savefig(f"distribution/{self.package_name}_dist.png")
-        plt.show()
