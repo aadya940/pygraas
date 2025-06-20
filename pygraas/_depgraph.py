@@ -3,9 +3,6 @@ import pydot
 import networkx as nx
 import matplotlib.pyplot as plt
 import os
-import shutil
-import sys
-import seaborn as sns
 from collections import Counter
 import threading  # Import threading module
 from unittest.mock import patch

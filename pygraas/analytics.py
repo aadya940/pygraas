@@ -22,11 +22,10 @@ def get_degree_distribution(graph: nx.Graph):
     degrees, counts = zip(*sorted(degree_freq.items()))
     return degrees, counts
 
-
-def plot_degree_distribution(graph: nx.Graph, vulnerable_only=False):
+def plot_degree_distribution(graph: nx.Graph, vulnerable_only=False, filename=None):
     """Plots the in-degree and out-degree distribution of the graph."""
     if vulnerable_only:
-        nodes = [n for n in graph.nodes if graph.nodes[n].get("is_vulnerable", False)]
+        nodes = [n for n in graph.nodes if graph.nodes[n].get("is_vulnerable", True)]
     else:
         nodes = graph.nodes
 
@@ -50,51 +49,112 @@ def plot_degree_distribution(graph: nx.Graph, vulnerable_only=False):
     plt.xlabel("Degree")
     plt.ylabel("Frequency")
 
-    plt.tight_layout()
-    plt.show()
+    if not filename:
+        plt.tight_layout()
+        plt.show()
+        return
+    
+    plt.savefig(filename)
+    return
 
+def vulnerable_diameter(graph: nx.Graph):
+    """Compute diameters of vulnerable nodes and find ."""
+    if not nx.is_weakly_connected(graph):
+        return float('inf')
+    
+    graph = graph.to_undirected()
 
-def compute_shortest_paths_and_diameter(graph: nx.Graph):
-    """Compute shortest paths between all pairs of vulnerable nodes and find diameters."""
-    vulnerable_nodes = [
-        n for n in graph.nodes if graph.nodes[n].get("is_vulnerable", False)
-    ]
-    vulnerable_subgraph = graph.subgraph(vulnerable_nodes)
-    # Full graph diameter
-    full_diameter = nx.diameter(graph) if nx.is_connected(graph) else float("inf")
-    # Vulnerable subgraph diameter
-    vulnerable_diameter = (
-        nx.diameter(vulnerable_subgraph)
-        if nx.is_connected(vulnerable_subgraph)
-        else float("inf")
-    )
+    vul_nodes = [node for node, attr in graph.nodes(data=True) if attr["color"] == "red"]
+    subgraph_nodes = set(vul_nodes)
 
-    return full_diameter, vulnerable_diameter
+    # Find all shortest paths between pairs of non-vulnerable nodes.
+    for i, source in enumerate(vul_nodes):
+        for target in vul_nodes[i + 1:]:
+            # Get the shortest path between source and target
+            shortest_path = nx.shortest_path(graph, source=source, target=target)
+            # Add all nodes in the path to the subgraph
+            subgraph_nodes.update(shortest_path)
 
+    print("Subgraph Nodes are: ",subgraph_nodes)
 
-def calculate_pagerank_and_cycles(graph: nx.Graph):
+    _vul = graph.subgraph(list(subgraph_nodes))
+
+    if nx.is_connected(_vul):
+        return nx.diameter(_vul.to_undirected())
+    else:
+        if not nx.is_connected(graph):
+            print("Original graph is disconnected.")
+        else:      
+            print("Impossible, shouldn't be the case.")
+            raise
+        
+    print("Subgraph is disconnected, diameter is 'infy'")
+    return float("inf")
+
+def pagerank_and_cycles(graph: nx.Graph):
     """Calculate PageRank of vulnerable nodes and check for cycles."""
     vulnerable_nodes = [
-        n for n in graph.nodes if graph.nodes[n].get("is_vulnerable", False)
+        n for n in graph.nodes if graph.nodes[n].get("is_vulnerable", True)
     ]
+
     _graph = _get_gb_graph(graph)
-    pagerank = nx.pagerank(_graph, nodes=vulnerable_nodes)
-    return pagerank
+    pagerank = nx.pagerank(_graph)
+    vul_pagerank = {}
+
+    for node in pagerank:
+        if node in vulnerable_nodes:
+            vul_pagerank[node] = pagerank[node]
+
+    return vul_pagerank
 
 
-def calculate_cut_size(graph: nx.Graph):
+def cut_size(graph: nx.Graph):
     """Calculate the cut size between vulnerable and non-vulnerable nodes."""
     vulnerable_nodes = [
-        n for n in graph.nodes if graph.nodes[n].get("is_vulnerable", False)
+        n for n in graph.nodes if graph.nodes[n].get("is_vulnerable", True)
     ]
     non_vulnerable_nodes = [n for n in graph.nodes if n not in vulnerable_nodes]
     _graph = _get_gb_graph(graph)
     cut_size = nx.cut_size(_graph, vulnerable_nodes, non_vulnerable_nodes)
     return cut_size
 
+def analyse(graph):
+    analysis = {}
+    analysis["diameter"] = vulnerable_diameter(graph)
+    analysis["pagerank"] = pagerank_and_cycles(graph)
+    analysis["cut-size"] = cut_size(graph)
+    return analysis
 
-def find_structural_holes(graph: nx.Graph):
-    """Find structural holes in the graph using NetworkX."""
-    _graph = _get_gb_graph(graph)
-    structural_holes = nx.structural_holes(_graph)
-    return structural_holes
+def vulnerable_cycles(graph):
+    """
+    Return all cycles in the graph that contain at least one vulnerable node.
+
+    Parameters:
+    - G: A NetworkX graph with node attribute 'is_vulnerable' set to True or False.
+
+    Returns:
+    - List of cycles, where each cycle is a list of nodes.
+    """
+    cycles = list(nx.simple_cycles(graph))
+    vulnerable_cycles = [
+        cycle for cycle in cycles
+        if any(graph.nodes[node].get("is_vulnerable", False) for node in cycle)
+    ]
+    return vulnerable_cycles
+
+def effective_size(graph):
+    return nx.structuralholes.effective_size(graph)
+
+def constraint(graph):
+    return nx.structuralholes.constraint(graph)
+
+def is_dag(graph):
+    return nx.is_directed_acyclic_graph(graph)
+
+def v_structures(graph):
+    if is_dag(graph):
+        pass
+    else:
+        print("The given graph is not")
+
+    return nx.dag.v_structures(graph)

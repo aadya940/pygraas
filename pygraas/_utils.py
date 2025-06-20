@@ -12,7 +12,6 @@ import sys
 # os.system is potentially unsafe.
 # Use some other library, maybe `subprocess`?
 
-
 def get_package(package_name, package_url=None, clone=True):
     """
     Get the package source code.

@@ -7,11 +7,7 @@ from pydeps.pydeps import pydeps
 from pydeps import cli
 import subprocess
 import os
-import re
 from copy import deepcopy
-import shutil
-import random
-from functools import cached_property
 from collections import Counter
 import seaborn as sns
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -57,7 +53,7 @@ class VulnerabilityGraph:
 
         if not (self.graph.package_name in os.listdir(".")):
             _clone_package(
-                self.graph.package_name, self.graph.package_url, clone=self.allow_clone
+                self.graph.package_name, self.graph.package_url
             )
 
         result = subprocess.run(
@@ -91,7 +87,6 @@ class VulnerabilityGraph:
                 node["external"] = True
             except:
                 print(f"Passed external assignment for {_package}")
-                pass
 
             if vulnerabilities:
                 node, _bool = self._get_graph_node(_package)
